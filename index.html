@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEXORA · El techo no eras tú</title>
+<meta name="description" content="Estrategia de comunicación inicial en redes sociales para NEXORA GROUP en Ecuador: expectativa, atención, convencimiento y acción.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="img/isotipo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#003249; --navy-2:#00263a; --navy-3:#0a4562;
+  --cyan:#63c1d6; --cyan-2:#3fa9c2; --cyan-soft:#d9f0f5;
+  --ice:#e4ebf4; --white:#ffffff; --ink:#0d2a3a; --muted:#4f6b7a;
+  --line:rgba(0,50,73,.14);
+  --wide:'Michroma','Montserrat',sans-serif;
+  --sans:'Montserrat',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:var(--sans);color:var(--ink);background:var(--white);font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+@media (max-width:640px){.wrap{padding:0 16px}}
+
+/* ---------- chevron ---------- */
+.chev{display:inline-block;width:.55em;height:.85em;vertical-align:-.06em;margin-right:.35em;flex:none}
+.chev path{stroke:currentColor;stroke-width:3.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:24px;height:56px}
+.nav img{height:18px;width:auto}
+.nav ul{display:flex;gap:4px;list-style:none;overflow-x:auto;scrollbar-width:none;flex:1;justify-content:flex-end}
+.nav ul::-webkit-scrollbar{display:none}
+.nav a{display:block;padding:6px 10px;font-size:12px;font-weight:600;letter-spacing:.04em;text-decoration:none;color:var(--navy);white-space:nowrap;border-radius:4px}
+.nav a:hover,.nav a.on{background:var(--cyan-soft)}
+@media (max-width:760px){.nav img{display:none}.nav ul{justify-content:flex-start}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:calc(100vh - 56px);display:flex;align-items:stretch;overflow:hidden;background:var(--white)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;width:100%;padding-top:56px;padding-bottom:120px}
+.hero .logo{width:min(340px,70%);margin-bottom:6px}
+.hero .tagline{font-size:15px;color:var(--navy);font-weight:400;margin-bottom:48px}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan-2)}
+.hero h1{font-size:clamp(46px,7vw,92px);line-height:.98;font-weight:700;color:var(--navy);letter-spacing:-.02em;margin:14px 0 22px}
+.hero h1 em{font-style:normal;color:var(--cyan)}
+.hero p.lead{font-size:clamp(17px,1.6vw,20px);font-weight:300;color:var(--navy);max-width:520px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:34px;font-size:13px;color:var(--muted)}
+.hero .meta b{display:block;font-size:26px;font-weight:700;color:var(--navy);line-height:1.1}
+.hero-art{position:relative;height:100%;min-height:520px}
+.hero-art svg.bands{position:absolute;inset:-60px -200px -60px -40px;width:calc(100% + 240px);height:calc(100% + 120px)}
+.hero-photo{position:absolute;right:-20px;top:4%;width:88%;height:74%;clip-path:polygon(0 0,100% 0,100% 100%,26% 100%,0 72%);background:var(--ice) center/cover}
+.hero .mtn{position:absolute;left:38%;bottom:0;width:280px;z-index:1}
+.hero .by{position:absolute;right:32px;bottom:28px;z-index:3;text-align:right;color:var(--cyan-2);font-weight:600;font-size:18px;line-height:1.2}
+.hero .by b{color:var(--navy)}
+.hero .group{position:absolute;left:32px;bottom:30px;z-index:3;display:flex;align-items:center;gap:8px;font-family:var(--wide);font-size:11px;color:var(--navy);letter-spacing:.06em}
+.hero .group img{height:18px}
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;padding-bottom:150px}
+  .hero-art{min-height:380px;order:-1;margin:0 -16px}
+  .hero-photo{width:92%;right:0}
+  .hero .mtn{left:auto;right:10%;width:200px}
+  .hero .by{font-size:15px;right:16px}
+  .hero .group{left:16px}
+}
+
+/* ---------- sections ---------- */
+section{position:relative}
+.sec{overflow:hidden}
+.reel,.caro,.reels > *,.carousels > *{min-width:0}
+.strip{max-width:100%}
+.sec{padding:110px 0}
+.sec.navy{background:var(--navy);color:#fff}
+.sec.ice{background:var(--ice)}
+.sec-head{max-width:760px;margin-bottom:56px}
+.sec-head h2{display:flex;align-items:baseline;font-size:clamp(30px,4vw,48px);line-height:1.08;font-weight:600;color:var(--navy);margin:10px 0 18px;letter-spacing:-.01em}
+.navy .sec-head h2{color:#fff}
+.sec-head h2 .chev{color:var(--cyan)}
+.sec-head p{font-size:18px;font-weight:300;color:var(--muted)}
+.navy .sec-head p{color:#c9dde6}
+.navy .kicker{color:var(--cyan)}
+@media (max-width:640px){.sec{padding:72px 0}.sec-head{margin-bottom:36px}}
+
+/* corner bands decoration for navy sections */
+.deco{position:absolute;pointer-events:none;z-index:0}
+.sec > .wrap{position:relative;z-index:1}
+
+/* ---------- summary ---------- */
+.phases{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-radius:2px;overflow:hidden}
+.ph{position:relative;padding:30px 26px 34px;background:var(--navy-3);color:#fff;min-height:340px;display:flex;flex-direction:column}
+.ph:nth-child(2){background:#0d5574}.ph:nth-child(3){background:#2b8aa5}.ph:nth-child(4){background:var(--cyan);color:var(--navy)}
+.ph .n{font-family:var(--wide);font-size:12px;letter-spacing:.1em;opacity:.8}
+.ph h3{font-size:24px;font-weight:700;text-transform:uppercase;margin:10px 0 4px;letter-spacing:.02em}
+.ph .days{font-size:13px;font-weight:600;opacity:.85;margin-bottom:16px}
+.ph p{font-size:14.5px;font-weight:400;line-height:1.55;flex:1}
+.ph .feel{margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,.28);font-size:13px}
+.ph:nth-child(4) .feel{border-color:rgba(0,50,73,.25)}
+.ph .feel b{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.75;margin-bottom:2px}
+.ph::after{content:"";position:absolute;right:-14px;top:50%;width:28px;height:28px;background:inherit;transform:translateY(-50%) rotate(45deg);z-index:2}
+.ph:last-child::after{display:none}
+@media (max-width:900px){.phases{grid-template-columns:1fr 1fr}.ph::after{display:none}}
+@media (max-width:560px){.phases{grid-template-columns:1fr}.ph{min-height:0}}
+
+/* ---------- concept ---------- */
+.concept{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.bigline{font-size:clamp(34px,5vw,64px);font-weight:700;line-height:1.02;color:var(--navy);letter-spacing:-.02em}
+.bigline em{font-style:normal;color:var(--cyan)}
+.concept .story{margin-top:28px;font-size:18px;font-weight:300;color:var(--navy);max-width:560px}
+.concept .story p+p{margin-top:14px}
+.pos{border-left:4px solid var(--cyan);padding:4px 0 4px 24px}
+.pos dt{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan-2);margin-top:22px}
+.pos dt:first-child{margin-top:0}
+.pos dd{font-size:16px;color:var(--navy);margin-top:4px}
+.voice{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:64px}
+.voice > div{background:var(--ice);padding:26px 28px}
+.voice h4{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);margin-bottom:12px;display:flex;align-items:center}
+.voice ul{list-style:none;font-size:15px;color:var(--navy)}
+.voice li{padding:6px 0;border-bottom:1px solid var(--line)}
+.voice li:last-child{border:0}
+.voice .no li{text-decoration:line-through;text-decoration-color:var(--cyan-2);color:var(--muted)}
+@media (max-width:860px){.concept,.voice{grid-template-columns:1fr}.concept{gap:36px}}
+
+/* ---------- data ---------- */
+.data{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(255,255,255,.12)}
+.datum{background:var(--navy);padding:30px 28px 26px}
+.datum .v{font-size:clamp(40px,4.4vw,58px);font-weight:700;color:var(--cyan);line-height:1;letter-spacing:-.02em}
+.datum .v small{font-size:.45em;font-weight:600;margin-left:4px}
+.datum p{font-size:15px;color:#e6f1f5;margin-top:12px}
+.datum .src{display:block;font-size:11.5px;color:#8fb4c4;margin-top:12px}
+.datum .use{display:block;font-size:12.5px;color:var(--cyan);margin-top:10px;font-weight:600}
+.honest{margin-top:28px;display:flex;gap:16px;align-items:flex-start;background:rgba(99,193,214,.12);border:1px solid rgba(99,193,214,.35);padding:20px 24px;font-size:15px;color:#e6f1f5}
+.honest b{color:var(--cyan)}
+@media (max-width:860px){.data{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.data{grid-template-columns:1fr}}
+
+/* ---------- audiences ---------- */
+.aud{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:1px solid var(--line);position:relative;overflow:hidden;display:flex;flex-direction:column}
+.card .ph-img{height:170px;background:var(--ice) center/cover;clip-path:polygon(0 0,100% 0,100% 78%,84% 100%,0 100%)}
+.card .bd{padding:22px 24px 26px;flex:1;display:flex;flex-direction:column}
+.card h3{font-size:19px;font-weight:700;color:var(--navy);line-height:1.2}
+.card .svc{font-family:var(--wide);font-size:10.5px;letter-spacing:.08em;color:var(--cyan-2);margin:8px 0 14px}
+.card blockquote{font-size:15.5px;font-style:italic;font-weight:300;color:var(--navy);border-left:3px solid var(--cyan);padding-left:14px;margin-bottom:16px}
+.card dl{font-size:13.5px;color:var(--muted);margin-top:auto}
+.card dt{font-weight:700;color:var(--navy);font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-top:10px}
+.card dd{margin-top:2px}
+.aud .card.wide{grid-column:span 3;flex-direction:row}
+.aud .card.wide .ph-img{display:none}
+@media (max-width:960px){.aud{grid-template-columns:1fr 1fr}.aud .card.wide{grid-column:span 2}}
+@media (max-width:620px){.aud{grid-template-columns:1fr}.aud .card.wide{grid-column:auto;flex-direction:column}}
+
+/* ---------- route ---------- */
+.route{display:grid;grid-template-columns:repeat(4,1fr);position:relative;margin-top:10px}
+.route::before{content:"";position:absolute;left:4%;right:4%;top:27px;height:6px;background:linear-gradient(90deg,var(--navy),var(--cyan));border-radius:3px}
+.step{position:relative;padding:0 14px;text-align:left}
+.step .dot{width:60px;height:60px;border-radius:50%;background:#fff;border:6px solid var(--navy);display:grid;place-items:center;font-weight:800;font-size:18px;color:var(--navy);position:relative;z-index:1}
+.step:nth-child(2) .dot{border-color:#0d5574}.step:nth-child(3) .dot{border-color:#2b8aa5}.step:nth-child(4) .dot{border-color:var(--cyan)}
+.step h4{margin-top:18px;font-size:15px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.06em}
+.step .aw{font-size:13px;color:var(--cyan-2);font-weight:600;margin:4px 0 8px}
+.step p{font-size:14px;color:var(--muted)}
+.rhythm{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:56px}
+.rhythm div{border-top:3px solid var(--cyan);padding-top:14px}
+.rhythm b{display:block;font-size:30px;font-weight:700;color:var(--navy);line-height:1}
+.rhythm span{font-size:14px;color:var(--muted)}
+@media (max-width:820px){.route{grid-template-columns:1fr;gap:28px}.route::before{left:27px;right:auto;top:10px;bottom:10px;width:6px;height:auto;background:linear-gradient(180deg,var(--navy),var(--cyan))}.step{display:grid;grid-template-columns:60px 1fr;column-gap:18px}.step h4{margin-top:4px}.step .dot{grid-row:span 3}.rhythm{grid-template-columns:1fr 1fr}}
+
+/* ---------- phase blocks ---------- */
+.phase-top{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;margin-bottom:56px;align-items:end}
+.phase-top .big{font-size:clamp(38px,5.6vw,72px);font-weight:700;line-height:1;letter-spacing:-.02em;color:var(--navy)}
+.navy .phase-top .big{color:#fff}
+.phase-top .big em{font-style:normal;color:var(--cyan)}
+.phase-top .lead{font-size:18px;font-weight:300;margin-top:18px;color:var(--navy);max-width:600px}
+.navy .phase-top .lead{color:#d5e6ed}
+.facts{display:grid;gap:0;border-top:1px solid var(--line)}
+.navy .facts{border-color:rgba(255,255,255,.2)}
+.facts div{display:grid;grid-template-columns:130px 1fr;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14px}
+.navy .facts div{border-color:rgba(255,255,255,.2)}
+.facts b{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan-2);padding-top:2px}
+.navy .facts b{color:var(--cyan)}
+.facts span{color:var(--navy)}
+.navy .facts span{color:#fff}
+.meter{display:flex;gap:4px;margin-top:6px}
+.meter i{flex:1;height:6px;background:var(--line);border-radius:2px}
+.navy .meter i{background:rgba(255,255,255,.18)}
+.meter i.on{background:var(--cyan)}
+@media (max-width:860px){.phase-top{grid-template-columns:1fr;gap:28px}}
+
+.subhead{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);margin:56px 0 22px}
+.navy .subhead{color:#fff}
+.subhead::after{content:"";flex:1;height:1px;background:var(--line)}
+.navy .subhead::after{background:rgba(255,255,255,.2)}
+.subhead .chev{color:var(--cyan)}
+
+/* reel card */
+.reels{display:grid;gap:22px}
+.reel{display:grid;grid-template-columns:210px 1fr;gap:30px;background:#fff;border:1px solid var(--line);padding:24px;color:var(--ink)}
+.navy .reel{border-color:transparent}
+.phone{position:relative;aspect-ratio:9/16;border-radius:22px;overflow:hidden;background:var(--navy-2);color:#fff;box-shadow:0 18px 40px -18px rgba(0,50,73,.55);align-self:start}
+.phone .bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.55;filter:saturate(.8)}
+.phone .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,38,58,.25) 0%,rgba(0,38,58,.15) 40%,rgba(0,38,58,.92) 100%)}
+.phone .band{position:absolute;left:-30%;top:-8%;width:80%;height:40%;border:16px solid var(--cyan);border-top:0;border-left:0;transform:rotate(45deg);opacity:.9}
+.phone .ht{position:absolute;left:14px;right:14px;top:22%;font-size:17px;line-height:1.15;font-weight:800;text-shadow:0 2px 12px rgba(0,0,0,.35)}
+.phone .ht mark{background:var(--cyan);color:var(--navy);padding:0 4px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.phone .id{position:absolute;left:14px;top:14px;font-family:var(--wide);font-size:9px;letter-spacing:.08em;background:rgba(0,0,0,.35);padding:4px 7px;border-radius:3px}
+.phone .ft{position:absolute;left:14px;right:14px;bottom:14px;font-size:10.5px;display:flex;justify-content:space-between;align-items:center;opacity:.92}
+.phone .ft img{height:11px}
+.phone .bar{position:absolute;left:14px;right:14px;bottom:34px;height:3px;background:rgba(255,255,255,.3);border-radius:2px}
+.phone .bar i{display:block;height:100%;width:12%;background:var(--cyan);border-radius:2px}
+.rbody h4{font-size:22px;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:10px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.tag{font-size:11.5px;font-weight:600;padding:4px 9px;background:var(--ice);color:var(--navy);border-radius:3px}
+.tag.c{background:var(--cyan-soft);color:#0b6178}
+.hooks{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+.hooks div{border-top:3px solid var(--cyan);background:#f6f9fb;padding:10px 12px;font-size:13.5px;color:var(--navy)}
+.hooks b{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan-2);margin-bottom:3px}
+.primer{font-size:14.5px;color:var(--navy);background:linear-gradient(90deg,var(--cyan-soft),transparent);padding:10px 14px;margin-bottom:16px;border-left:3px solid var(--navy)}
+.primer b{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;margin-right:8px}
+.script{list-style:none;font-size:15px;color:var(--ink)}
+.script li{display:grid;grid-template-columns:74px 1fr;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.script li span{font-size:12px;font-weight:700;color:var(--cyan-2);padding-top:2px}
+.script li.sob span{color:var(--navy)}
+.cta{margin-top:16px;display:flex;gap:10px;align-items:flex-start;font-size:15px;font-weight:600;color:var(--navy)}
+.cta .chev{color:var(--cyan);margin-top:4px}
+.note{margin-top:12px;font-size:13px;color:var(--muted);font-style:italic}
+details.more{margin-top:6px}
+details.more summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--cyan-2);list-style:none;padding:6px 0}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary::before{content:"+ ";}
+details.more[open] summary::before{content:"– ";}
+@media (max-width:820px){.reel{grid-template-columns:1fr;padding:18px}.phone{width:min(240px,70%);margin:0 auto}.hooks{grid-template-columns:1fr}}
+
+/* carousel card */
+.carousels{display:grid;gap:22px}
+.caro{background:#fff;border:1px solid var(--line);padding:24px;color:var(--ink)}
+.navy .caro{border-color:transparent}
+.caro-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;margin-bottom:16px}
+.caro h4{font-size:21px;font-weight:700;color:var(--navy);line-height:1.2}
+.strip{display:flex;gap:10px;overflow-x:auto;padding-bottom:12px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--cyan) var(--ice)}
+.sl{flex:0 0 172px;aspect-ratio:4/5;padding:16px 15px;position:relative;display:flex;flex-direction:column;justify-content:center;scroll-snap-align:start;font-size:13.5px;line-height:1.3;font-weight:600;overflow:hidden}
+.sl .k{position:absolute;top:10px;left:12px;font-family:var(--wide);font-size:8.5px;letter-spacing:.08em;opacity:.7}
+.sl .lg{position:absolute;bottom:10px;right:12px;height:9px;opacity:.9}
+.sl.s0{background:var(--navy);color:#fff;font-size:16px;font-weight:800;line-height:1.15}
+.sl.s0{isolation:isolate}
+.sl.s0::after{content:"";position:absolute;right:-46px;bottom:-46px;width:92px;height:92px;border:12px solid var(--cyan);transform:rotate(45deg);z-index:-1;opacity:.85}
+.sl.s1{background:#fff;color:var(--navy);border:1px solid var(--line)}
+.sl.s2{background:var(--ice);color:var(--navy)}
+.sl.s3{background:var(--cyan);color:var(--navy);font-weight:700}
+.sl b{color:var(--cyan-2)}
+.sl.s0 b,.sl.s3 b{color:inherit;text-decoration:underline;text-decoration-color:var(--cyan);text-underline-offset:3px}
+.sl small{display:block;margin-top:8px;font-size:10px;font-weight:500;opacity:.75}
+.caro .cap{font-size:14.5px;color:var(--muted);margin-top:6px}
+.caro .cap b{color:var(--navy)}
+
+/* stories + kpis */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.box{padding:26px 28px;background:var(--ice);color:var(--navy)}
+.navy .box{background:var(--navy-3);color:#fff}
+.box h5{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px;color:var(--cyan-2);display:flex;align-items:center}
+.navy .box h5{color:var(--cyan)}
+.box ul{list-style:none;font-size:15px}
+.box li{padding:8px 0 8px 22px;position:relative;border-bottom:1px solid var(--line)}
+.navy .box li{border-color:rgba(255,255,255,.15)}
+.box li:last-child{border:0}
+.box li::before{content:"";position:absolute;left:2px;top:15px;width:7px;height:7px;border-right:2px solid var(--cyan);border-bottom:2px solid var(--cyan);transform:rotate(-45deg)}
+@media (max-width:760px){.duo{grid-template-columns:1fr}}
+
+/* calendar */
+.cal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.col{background:#fff;border-top:6px solid var(--navy)}
+.col:nth-child(2){border-color:#0d5574}.col:nth-child(3){border-color:#2b8aa5}.col:nth-child(4){border-color:var(--cyan)}
+.col h4{padding:16px 18px 4px;font-size:15px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.05em}
+.col .d{padding:0 18px 12px;font-size:12.5px;color:var(--muted)}
+.col ol{list-style:none;padding:0 10px 14px}
+.col li{display:grid;grid-template-columns:44px 1fr;gap:8px;align-items:start;padding:8px;border-radius:3px;font-size:13.5px;color:var(--navy)}
+.col li:nth-child(odd){background:#f5f8fa}
+.col li span{font-weight:700;font-size:12px;color:var(--cyan-2);padding-top:1px}
+.col li i{font-style:normal;display:inline-block;font-size:10px;font-weight:700;padding:1px 5px;border-radius:2px;margin-right:5px;vertical-align:1px}
+.col li i.r{background:var(--navy);color:#fff}.col li i.c{background:var(--cyan);color:var(--navy)}.col li i.h{background:var(--ice);color:var(--navy)}
+@media (max-width:980px){.cal{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.cal{grid-template-columns:1fr}}
+
+/* table */
+.tbl{width:100%;border-collapse:collapse;font-size:14.5px}
+.tbl th{text-align:left;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);padding:12px 14px;border-bottom:2px solid var(--cyan)}
+.tbl td{padding:14px;border-bottom:1px solid rgba(255,255,255,.16);vertical-align:top;color:#e6f1f5}
+.tbl td:first-child{font-weight:700;color:#fff;white-space:nowrap}
+.tbl-wrap{overflow-x:auto}
+@media (max-width:700px){.tbl,.tbl tbody,.tbl tr,.tbl td{display:block}.tbl thead{display:none}.tbl tr{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.2)}.tbl td{border:0;padding:4px 0}.tbl td::before{content:attr(data-h);display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan)}}
+
+/* paid */
+.paid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.paid div{background:#fff;padding:22px 22px 24px;border:1px solid var(--line)}
+.paid b{font-size:44px;font-weight:700;color:var(--navy);line-height:1}
+.paid h5{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--cyan-2);margin:8px 0 8px}
+.paid p{font-size:14px;color:var(--muted)}
+@media (max-width:900px){.paid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.paid{grid-template-columns:1fr}}
+
+/* rules */
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;counter-reset:r}
+.rules li{list-style:none;counter-increment:r;padding:18px 0 18px 54px;position:relative;border-bottom:1px solid var(--line);font-size:15.5px;color:var(--navy)}
+.rules li::before{content:counter(r,decimal-leading-zero);position:absolute;left:0;top:16px;font-family:var(--wide);font-size:15px;color:var(--cyan-2)}
+.rules li b{display:block;font-size:16.5px;margin-bottom:2px}
+@media (max-width:760px){.rules{grid-template-columns:1fr}}
+
+.method{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(255,255,255,.14)}
+.method div{background:var(--navy);padding:24px 24px 26px}
+.method h5{font-size:15px;font-weight:700;color:#fff;margin-bottom:6px;display:flex;align-items:center}
+.method h5 .chev{color:var(--cyan)}
+.method p{font-size:14px;color:#c9dde6}
+@media (max-width:860px){.method{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.method{grid-template-columns:1fr}}
+
+.needs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.needs div{border:1px solid var(--line);padding:20px 22px;background:#fff}
+.needs b{display:block;font-size:15px;color:var(--navy);margin-bottom:4px}
+.needs span{font-size:14px;color:var(--muted)}
+@media (max-width:860px){.needs{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.needs{grid-template-columns:1fr}}
+
+/* closing */
+.closing{position:relative;overflow:hidden;background:#fff;padding:120px 0 0}
+.closing .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}
+.closing h2{font-size:clamp(34px,5vw,64px);font-weight:700;line-height:1.02;color:var(--navy);letter-spacing:-.02em}
+.closing h2 em{font-style:normal;color:var(--cyan)}
+.closing p{font-size:18px;font-weight:300;color:var(--navy);margin-top:20px;max-width:480px}
+.closing .ph2{height:520px;background:var(--ice) center top/cover;clip-path:polygon(18% 0,100% 0,100% 100%,0 100%,0 22%)}
+.closing .mtn{width:300px;margin-top:60px}
+.sources{background:var(--navy-2);color:#a9c4d1;padding:56px 0 64px;font-size:13px}
+.sources h5{color:#fff;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+.sources ol{padding-left:18px;columns:2;column-gap:40px}
+.sources li{margin-bottom:8px;break-inside:avoid}
+.sources a{color:var(--cyan)}
+.sources .foot{margin-top:36px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center}
+.sources .foot img{height:20px}
+@media (max-width:860px){.closing .wrap{grid-template-columns:1fr}.closing .ph2{height:380px}.sources ol{columns:1}}
+.fade{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.fade.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media print{.nav{display:none}.fade{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="ch" viewBox="0 0 10 16"><path d="M2.2 2 L7.8 8 L2.2 14"/></symbol></svg>
+
+<nav class="nav" aria-label="Secciones">
+  <div class="wrap">
+    <img src="img/logo.svg" alt="NEXORA">
+    <ul>
+      <li><a href="#concepto">Concepto</a></li>
+      <li><a href="#datos">Datos</a></li>
+      <li><a href="#audiencias">Audiencias</a></li>
+      <li><a href="#ruta">Ruta</a></li>
+      <li><a href="#fase-1">1 · Expectativa</a></li>
+      <li><a href="#fase-2">2 · Atención</a></li>
+      <li><a href="#fase-3">3 · Convencimiento</a></li>
+      <li><a href="#fase-4">4 · Acción</a></li>
+      <li><a href="#calendario">Calendario</a></li>
+      <li><a href="#reglas">Líneas rojas</a></li>
+      <li><a href="#medicion">Medición</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <img class="logo" src="img/logo.svg" alt="NEXORA">
+      <div class="tagline">International Mobility &amp; Advisory</div>
+      <div class="kicker">Estrategia de comunicación inicial · Ecuador</div>
+      <h1>El techo<br>no eras <em>tú.</em></h1>
+      <p class="lead">Campaña de lanzamiento en redes sociales para NEXORA GROUP: cuatro fases, de la expectativa a la acción, contadas en reels y carruseles para ecuatorianos que sienten que ya llegaron a su límite aquí.</p>
+      <div class="meta" id="heroMeta"></div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg class="bands" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice">
+        <path d="M150 -40 V470 L330 650 H900" stroke="#003249" stroke-width="120" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M215 -40 V430 L370 585 H900" stroke="#63c1d6" stroke-width="64" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+      <div class="hero-photo" style="background-image:url(img/visado.jpg)"></div>
+    </div>
+  </div>
+  <img class="mtn" src="img/montana.svg" alt="">
+  <div class="group"><img src="img/isotipo.svg" alt="">NEXORA GROUP</div>
+  <div class="by">Propuesta de comunicación<br><b>Noviembre 2026</b></div>
+</header>
+
+<!-- ================= RESUMEN ================= -->
+<section class="sec navy" id="resumen">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="kicker">La campaña en 30 segundos</div>
+      <h2><svg class="chev"><use href="#ch"/></svg>Cuatro fases, una sola historia.</h2>
+      <p>Cada fase mueve a la persona un escalón: de no saber que tiene un problema a escribirnos para resolverlo. Ninguna pieza vende antes de tiempo.</p>
+    </div>
+    <div class="phases fade">
+      <div class="ph"><div class="n">FASE 01</div><h3>Expectativa</h3><div class="days">Días 1 – 10</div><p>Instalamos una incomodidad y una pregunta: <i>¿y si el problema nunca fui yo?</i> No hay servicios ni precios. La marca aparece solo en su estética.</p><div class="feel"><b>Lo que siente</b>«Eso me pasa a mí.»</div></div>
+      <div class="ph"><div class="n">FASE 02</div><h3>Atención</h3><div class="days">Días 11 – 24</div><p>Revelamos a NEXORA y abrimos la idea central: hay rutas en regla hacia Europa y son más concretas de lo que la gente cree. Mucho valor, poca venta.</p><div class="feel"><b>Lo que siente</b>«No sabía que se podía así.»</div></div>
+      <div class="ph"><div class="n">FASE 03</div><h3>Convencimiento</h3><div class="days">Días 25 – 38</div><p>Mostramos el método, las personas y los límites. Respondemos las objeciones reales que nos dejaron en comentarios. La transparencia es el argumento.</p><div class="feel"><b>Lo que siente</b>«Con ellos no me van a engañar.»</div></div>
+      <div class="ph"><div class="n">FASE 04</div><h3>Acción</h3><div class="days">Días 39 – 52 y después</div><p>Una sola llamada a la acción: escribir <b>RUTA</b> para agendar la evaluación inicial. Urgencia solo con fechas y cupos reales.</p><div class="feel"><b>Lo que hace</b>Escribe. Agenda. Llega.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONCEPTO ================= -->
+<section class="sec" id="concepto">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="kicker">Posicionamiento · se define antes de escribir una sola pieza</div>
+      <h2><svg class="chev"><use href="#ch"/></svg>El concepto de campaña</h2>
+    </div>
+    <div class="concept">
+      <div class="fade">
+        <div class="bigline">El techo<br>no eras <em>tú.</em></div>
+        <div class="story">
+          <p>Miles de ecuatorianos madrugan, estudian, aguantan y hacen horas extra, y aun así sienten que el año se repite. La campaña le pone nombre a esa sensación sin culpar a nadie: el límite está en el contexto, no en la persona.</p>
+          <p>La tensión abre la conversación y NEXORA trae la salida: <b>hay otro camino, y tiene papeles.</b> Una ruta legal hacia Europa, ordenada y acompañada, sin selva, sin deudas con desconocidos y sin promesas imposibles.</p>
+          <p>Cierre de campaña: <b>«El techo no eras tú. Pero el próximo paso sí te toca a ti.»</b></p>
+        </div>
+      </div>
+      <dl class="pos fade">
+        <dt>Rubro</dt>
+        <dd>Movilidad internacional y asesoría para procesos regulares hacia Europa (visados, estudios, familia, llegada y documentos).</dd>
+        <dt>Beneficio central (una frase)</dt>
+        <dd>Te decimos con claridad qué ruta en regla tiene tu proyecto en Europa, qué papeles necesita, y te acompañamos a armarlo.</dd>
+        <dt>Fórmula de posicionamiento</dt>
+        <dd>NEXORA ayuda a ecuatorianos que sienten que llegaron a su techo a preparar su proyecto en Europa por la vía regular, con un expediente ordenado y una persona real que los acompaña.</dd>
+        <dt>Ángulo de tensión</dt>
+        <dd>Llevas años empujando la misma puerta. Te falta otra ruta, no más esfuerzo.</dd>
+        <dt>El contrapeso que nos da credibilidad</dt>
+        <dd>«Pero no te podemos garantizar la visa. Nadie puede.» Lo que el brochure ya dice —<i>ningún servicio implica garantía de aprobación</i>— se convierte en argumento de venta.</dd>
+      </dl>
+    </div>
+    <div class="voice">
+      <div class="fade">
+        <h4><svg class="chev"><use href="#ch"/></svg>Cómo suena NEXORA</h4>
+        <ul>
+          <li>Tutea, directo y cercano. Habla como una asesora que conoce Quito, Guayaquil y Cuenca, no como un folleto.</li>
+          <li>Usa el término técnico y lo traduce en la misma frase: «el NIE, tu número para casi cualquier trámite».</li>
+          <li>Cifras exactas con fuente: «36,6 de cada 100», nunca «muchísima gente».</li>
+          <li>Dice primero lo que no puede hacer y después lo que sí.</li>
+          <li>Respeta a Ecuador y a quien decide quedarse. La tensión apunta a la situación, nunca al país.</li>
+        </ul>
+      </div>
+      <div class="no fade">
+        <h4><svg class="chev"><use href="#ch"/></svg>Palabras que no usamos</h4>
+        <ul>
+          <li>Garantizado · 100% · visa segura</li>
+          <li>Fácil · rápido · sin requisitos</li>
+          <li>«Sal de este país» · «aquí no hay futuro»</li>
+          <li>«El sueño europeo» · «cambia tu vida»</li>
+          <li>«Solo hoy» o cupos que no existen</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DATOS ================= -->
+<section class="sec navy" id="datos">
+  <svg class="deco" style="right:-120px;top:-60px;width:420px;height:420px" viewBox="0 0 400 400" aria-hidden="true"><path d="M60 -20 V220 L200 360 H460" stroke="#63c1d6" stroke-width="44" fill="none" opacity=".18" stroke-linejoin="round"/></svg>
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="kicker">La tensión, con datos reales</div>
+      <h2><svg class="chev"><use href="#ch"/></svg>Las cifras que sostienen la campaña</h2>
+      <p>Una tensión sin datos suena a vendehumo. Estas son las cifras que usamos en los guiones; cada una lleva su fuente en el pie del post.</p>
+    </div>
+    <div class="data fade">
+      <div class="datum"><div class="v">36,6<small>%</small></div><p>de la fuerza laboral de Ecuador tiene empleo adecuado. Casi dos de cada tres, no.</p><span class="src">INEC · ENEMDU, mayo 2026</span><span class="use">Carrusel E2</span></div>
+      <div class="datum"><div class="v">34,6<small>%</small></div><p>de los jóvenes de 18 a 29 años tiene empleo adecuado. Subió desde 28,0%, pero sigue lejos de la mitad.</p><span class="src">INEC · mayo 2025 vs. mayo 2026</span><span class="use">Carrusel E2 · Reel A2</span></div>
+      <div class="datum"><div class="v">$12</div><p>es lo que subió el sueldo básico para 2026: de $470 a $482.</p><span class="src">Acuerdo Ministerial MDT-2025-195</span><span class="use">Reel E1 «Doce dólares»</span></div>
+      <div class="datum"><div class="v">€1.221</div><p>es el salario mínimo en España en 2026, en 14 pagas (€17.094 al año). Más del doble, y con un costo de vida también más alto.</p><span class="src">Real Decreto 126/2026 · BOE</span><span class="use">Carrusel A1</span></div>
+      <div class="datum"><div class="v">30 <small>h/sem</small></div><p>puede trabajar quien estudia un grado, máster o doctorado en España desde el 20 de mayo de 2025. Antes eran 20.</p><span class="src">Reglamento de Extranjería · RD 1155/2024</span><span class="use">Reel A2 «30 horas»</span></div>
+      <div class="datum"><div class="v">4.949</div><p>ecuatorianos fueron detenidos en 2025 en la frontera de EE. UU. con México. La ruta irregular tiene un costo que nadie cotiza.</p><span class="src">Diario El Mercurio (Cuenca), 2025</span><span class="use">Reel A4 «Dos caminos»</span></div>
+    </div>
+    <div class="honest fade"><svg class="chev" style="color:var(--cyan);width:14px;height:20px;margin-top:2px"><use href="#ch"/></svg><div><b>Contexto que juega a favor de la vía legal:</b> en 2025, 13.689 ecuatorianos obtuvieron la nacionalidad española (INE) y el censo español de 2021 registró 416.323 ecuatorianos viviendo allá. Para muchas familias, Europa no es un salto al vacío: ya tienen a alguien allá. Ahí entra NEXORA FAMILY.</div></div>
+  </div>
+</section>
+
+<!-- ================= AUDIENCIAS ================= -->
+<section class="sec ice" id="audiencias">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="kicker">A quién le hablamos · por situación, no por edad ni género</div>
+      <h2><svg class="chev"><use href="#ch"/></svg>Cinco perfiles, cinco frenos distintos</h2>
+      <p>Cada pieza de la campaña se escribe para uno de estos perfiles y les habla desde lo que los frena. En pantalla nunca se nombra el perfil.</p>
+    </div>
+    <div class="aud">
+      <article class="card fade"><div class="ph-img" style="background-image:url(img/consulta.jpg)"></div><div class="bd">
+        <h3>El profesional estancado</h3><div class="svc">NEXORA VISA · NEXORA STUDY</div>
+        <blockquote>«Tengo título, tengo trabajo, y hace cuatro años gano casi lo mismo.»</blockquote>
+        <dl><dt>Lo que compra</dt><dd>Salir del «sigo como estoy» sin lanzarse al vacío.</dd><dt>Palanca</dt><dd>Lo que le cuesta quedarse igual, con datos.</dd><dt>Freno</dt><dd>«Ya estoy grande para empezar de cero.»</dd></dl>
+      </div></article>
+      <article class="card fade"><div class="ph-img" style="background-image:url(img/estudiante.jpg)"></div><div class="bd">
+        <h3>El recién graduado con hambre</h3><div class="svc">NEXORA STUDY</div>
+        <blockquote>«La mitad de mi promoción ya se fue. Yo sigo mandando hojas de vida.»</blockquote>
+        <dl><dt>Lo que compra</dt><dd>Acceso: un máster en Europa y la posibilidad de trabajar mientras estudia.</dd><dt>Palanca</dt><dd>Información que sus amigos no tienen (las 30 horas).</dd><dt>Freno</dt><dd>«No me alcanza la plata.»</dd></dl>
+      </div></article>
+      <article class="card fade"><div class="ph-img" style="background-image:url(img/familia.jpg);background-position:center 25%"></div><div class="bd">
+        <h3>La familia partida en dos</h3><div class="svc">NEXORA FAMILY</div>
+        <blockquote>«Mi esposo está en Murcia desde hace tres años. Los niños lo ven por videollamada.»</blockquote>
+        <dl><dt>Lo que compra</dt><dd>Tranquilidad: que la familia se junte por la vía correcta.</dd><dt>Palanca</dt><dd>El tiempo que ya llevan separados.</dd><dt>Freno</dt><dd>«Los papeles son un laberinto.»</dd></dl>
+      </div></article>
+      <article class="card fade"><div class="ph-img" style="background-image:url(img/relocation.jpg)"></div><div class="bd">
+        <h3>El que ya decidió y no sabe por dónde empezar</h3><div class="svc">NEXORA RELOCATION · NEXORA DOCUMENTS</div>
+        <blockquote>«Ya tengo la admisión. ¿Y ahora qué? ¿Qué es el NIE?»</blockquote>
+        <dl><dt>Lo que compra</dt><dd>Dirección: una lista clara de pasos en orden.</dd><dt>Palanca</dt><dd>El miedo a llegar y quedarse trabado en un trámite.</dd><dt>Freno</dt><dd>«Lo puedo hacer solo con YouTube.»</dd></dl>
+      </div></article>
+      <article class="card fade"><div class="ph-img" style="background-image:url(img/asesora.jpg);background-position:center 20%"></div><div class="bd">
+        <h3>El escéptico que conoce historias de estafas</h3><div class="svc">Transversal · todas las fases</div>
+        <blockquote>«A mi primo le cobraron $3.000 por una cita que nunca existió.»</blockquote>
+        <dl><dt>Lo que compra</dt><dd>Certeza: saber con quién habla y qué recibe por escrito.</dd><dt>Palanca</dt><dd>Prueba, transparencia y personas con nombre y rostro.</dd><dt>Freno</dt><dd>«Todos dicen lo mismo y después desaparecen.»</dd></dl>
+      </div></article>
+      <article class="card fade"><div class="bd" style="background:var(--navy);color:#fff;justify-content:center">
+        <h3 style="color:#fff">Dónde están</h3><div class="svc" style="color:var(--cyan)">Segmentación inicial</div>
+        <p style="font-size:15px;color:#d5e6ed">Quito, Guayaquil y Cuenca como núcleo, más Azuay, Cañar y Loja por su tradición de migración hacia España. 18 a 45 años. Instagram y TikTok para los perfiles jóvenes; Facebook para familias y mayores de 35.</p>
+        <p style="font-size:13px;color:#8fb4c4;margin-top:14px">La segmentación por provincias se valida con los datos de la semana 1.</p>
+      </div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RUTA ================= -->
+<section class="sec" id="ruta">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="kicker">El recorrido de la persona</div>
+      <h2><svg class="chev"><use href="#ch"/></svg>De no saberlo a escribirnos</h2>
+      <p>Cada fase sube un nivel de conciencia. Si una pieza intenta saltarse dos niveles, la sacamos.</p>
+    </div>
+    <div class="route fade">
+      <div class="step"><div class="dot">1</div><h4>Expectativa</h4><div class="aw">No lo sabe → siente el problema</div><p>Reconoce su techo. Todavía no busca soluciones.</p></div>
+      <div class="step"><div class="dot">2</div><h4>Atención</h4><div class="aw">Siente el problema → conoce la salida</div><p>Descubre que hay rutas en regla y que no son para millonarios.</p></div>
+      <div class="step"><div class="dot">3</div><h4>Convencimiento</h4><div class="aw">Conoce la salida → confía en NEXORA</div><p>Entiende el método, ve a las personas y deja de sospechar.</p></div>
+      <div class="step"><div class="dot">4</div><h4>Acción</h4><div class="aw">Confía → escribe RUTA</div><p>Da un paso pequeño y concreto: la evaluación inicial.</p></div>
+    </div>
+    <div class="rhythm fade" id="rhythm"></div>
+  </div>
+</section>
+
+<!-- ================= FASES (rendered) ================= -->
+<div id="phases"></div>
+
+<!-- ================= CALENDARIO ================= -->
+<section class="sec ice" id="calendario">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="kicker">52 días · publicación en Instagram, TikTok y Facebook</div>
+      <h2><svg class="chev"><use href="#ch"/></svg>Calendario de la campaña</h2>
+      <p>El día 1 lo fijamos juntos. Los reels salen en las tres redes; los carruseles en Instagram, Facebook y en modo foto de TikTok. Las historias corren todos los días.</p>
+    </div>
+    <div class="cal fade" id="cal"></div>
+  </div>
+</section>
+
+<!-- ================= PAUTA ================= -->
+<section class="sec" id="pauta">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="kicker">Distribución pagada</div>
+      <h2><svg class="chev"><use href="#ch"/></svg>Sin pauta, la expectativa no existe</h2>
+      <p>Una cuenta nueva no tiene a quién generarle expectativa. La pauta empuja los teasers a la gente correcta y luego persigue a quien ya mostró interés. Proponemos el reparto; el monto lo definimos con NEXORA.</p>
+    </div>
+    <div class="paid fade">
+      <div><b>30%</b><h5>Expectativa</h5><p>Objetivo de reproducciones (ThruPlay) en las ciudades y provincias núcleo. Construye el público que vio el 50% o más de los teasers.</p></div>
+      <div><b>30%</b><h5>Atención</h5><p>Interacción y seguidores con los reels A2, A3 y A4. Los carruseles que más se guarden se convierten en anuncio.</p></div>
+      <div><b>20%</b><h5>Convencimiento</h5><p>Retargeting: solo a quien vio, guardó o comentó. Reels C1 y C2 y el carrusel de estafas.</p></div>
+      <div><b>20%</b><h5>Acción</h5><p>Anuncios de mensajes (Instagram Direct y WhatsApp) con la palabra RUTA. Se mide en costo por evaluación agendada.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REGLAS ================= -->
+<section class="sec ice" id="reglas">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="kicker">Lo que protege la reputación de NEXORA</div>
+      <h2><svg class="chev"><use href="#ch"/></svg>Líneas rojas de la campaña</h2>
+      <p>Jugar con la tensión funciona si se hace con cuidado. En un rubro donde abundan las estafas, una sola promesa exagerada borra todo lo construido.</p>
+    </div>
+    <ol class="rules fade">
+      <li><b>Nunca prometemos aprobación ni plazos.</b>Ningún servicio implica garantía de aprobación. Lo decimos en voz alta y lo repetimos.</li>
+      <li><b>La tensión apunta a la situación, no al país.</b>Nada de «aquí no hay futuro». Quien decide quedarse merece el mismo respeto que quien se va.</li>
+      <li><b>Cero promoción de rutas irregulares.</b>Cuando las mencionamos es para mostrar el riesgo, sin burlarnos de quien las tomó.</li>
+      <li><b>Toda cifra lleva fuente y fecha.</b>En el pie del carrusel o en el texto del reel. Si no hay fuente, la cifra no sale.</li>
+      <li><b>Testimonios y casos, solo reales.</b>Con consentimiento escrito. Nada de actores presentados como clientes.</li>
+      <li><b>Urgencia solo con fechas reales.</b>Cupos semanales que existen y calendarios académicos verificables.</li>
+      <li><b>Revisión normativa antes de publicar.</b>Toda pieza que mencione requisitos la valida el equipo de NEXORA, porque las normas cambian.</li>
+      <li><b>Moderación preparada.</b>Respuestas tipo para comentarios de «vendepatria», denuncias de estafa o política. Se responde con calma o se oculta; nunca se discute.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= MEDICIÓN ================= -->
+<section class="sec navy" id="medicion">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="kicker">Cómo sabemos que funciona</div>
+      <h2><svg class="chev"><use href="#ch"/></svg>Medición por fase</h2>
+      <p>Las metas numéricas se fijan al cerrar la semana 1, con datos reales de la cuenta. No inventamos cifras de antemano.</p>
+    </div>
+    <div class="tbl-wrap fade">
+      <table class="tbl">
+        <thead><tr><th>Fase</th><th>Métrica principal</th><th>Métricas de apoyo</th><th>Señal para pasar a la siguiente</th></tr></thead>
+        <tbody>
+          <tr><td data-h="Fase">1 · Expectativa</td><td data-h="Métrica principal">Retención al 50% de los teasers</td><td data-h="Métricas de apoyo">Reproducciones de 3 s, comentarios en E1 y E2, respuestas a la caja «¿Qué te frena?»</td><td data-h="Señal">Tenemos al menos 20 objeciones reales para escribir la Fase 3</td></tr>
+          <tr><td data-h="Fase">2 · Atención</td><td data-h="Métrica principal">Compartidos y seguidores nuevos</td><td data-h="Métricas de apoyo">Guardados, visitas al perfil, comentarios con palabra clave (ESTUDIAR, RUTA, CUENTA)</td><td data-h="Señal">Los carruseles de utilidad superan en guardados al promedio de la cuenta</td></tr>
+          <tr><td data-h="Fase">3 · Convencimiento</td><td data-h="Métrica principal">Conversaciones iniciadas por mensaje directo</td><td data-h="Métricas de apoyo">Respuestas a historias, asistencia al live, guardados del checklist</td><td data-h="Señal">Las preguntas por DM pasan de «¿qué hacen?» a «¿cómo empiezo?»</td></tr>
+          <tr><td data-h="Fase">4 · Acción</td><td data-h="Métrica principal">Evaluaciones agendadas</td><td data-h="Métricas de apoyo">Asistencia a la evaluación, contratos firmados, costo por evaluación</td><td data-h="Señal">La agenda semanal se llena; se pasa a modo permanente</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="subhead" style="margin-top:80px"><svg class="chev"><use href="#ch"/></svg>Método Fórmula 100K aplicado</div>
+    <div class="method fade">
+      <div><h5><svg class="chev"><use href="#ch"/></svg>Posicionamiento primero</h5><p>Ángulo, beneficio central y voz definidos antes de escribir cualquier pieza.</p></div>
+      <div><h5><svg class="chev"><use href="#ch"/></svg>Perfiles de compra</h5><p>Cada pieza apunta a un perfil y a su freno: estancado, ambicioso, familia, perdido, escéptico.</p></div>
+      <div><h5><svg class="chev"><use href="#ch"/></svg>Estructura y pilar por pieza</h5><p>Cada reel declara su estructura (Espejo, Versus, Gancho controversial…) y su pilar de valor.</p></div>
+      <div><h5><svg class="chev"><use href="#ch"/></svg>Gancho en tres capas</h5><p>Lo que se dice, lo que se ve y lo que se lee en los primeros 3 segundos, coherentes entre sí.</p></div>
+      <div><h5><svg class="chev"><use href="#ch"/></svg>El «pero» que da credibilidad</h5><p>Justo después del gancho, una línea que le resta a la propia promesa. En este rubro vale oro.</p></div>
+      <div><h5><svg class="chev"><use href="#ch"/></svg>Pase de reescritura</h5><p>Frases cortas, verbos que se pueden grabar, cero muletillas de vendedor y cifras exactas.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NECESITAMOS ================= -->
+<section class="sec" id="necesitamos">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="kicker">Para arrancar</div>
+      <h2><svg class="chev"><use href="#ch"/></svg>Lo que necesitamos de NEXORA</h2>
+    </div>
+    <div class="needs fade">
+      <div><b>Destino principal</b><span>¿España como puerta de entrada (el brochure menciona el NIE) o también Suiza y otros países?</span></div>
+      <div><b>La oferta de entrada</b><span>¿La evaluación inicial es gratuita (20 min) o pagada y descontable del servicio? ¿Cuántas por semana pueden atender?</span></div>
+      <div><b>Un rostro</b><span>Una asesora o asesor que sea la voz de la campaña frente a cámara. La confianza en este rubro tiene cara.</span></div>
+      <div><b>Casos reales</b><span>Dos o tres procesos acompañados, con permiso escrito para contarlos (pueden ir anonimizados).</span></div>
+      <div><b>Canales</b><span>Acceso a @nexoragroup.ch, número de WhatsApp de atención y herramienta de agenda.</span></div>
+      <div><b>Presupuesto de pauta</b><span>Monto total para las 8 semanas, para repartirlo según el esquema 30/30/20/20.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CIERRE ================= -->
+<section class="closing">
+  <div class="wrap">
+    <div class="fade">
+      <img src="img/logo.svg" alt="NEXORA" style="width:240px;margin-bottom:34px">
+      <h2>Tu próximo paso <em>comienza aquí.</em></h2>
+      <p>Con la aprobación de esta ruta, la semana siguiente entregamos los guiones finales, el diseño de los carruseles y el plan de grabación de la Fase 1.</p>
+      <img class="mtn" src="img/montana.svg" alt="">
+    </div>
+    <div class="ph2" style="background-image:url(img/contacto.jpg)"></div>
+  </div>
+</section>
+
+<footer class="sources">
+  <div class="wrap">
+    <h5>Fuentes de las cifras</h5>
+    <ol>
+      <li>INEC, ENEMDU mayo 2026 (empleo adecuado nacional 36,6%): <a href="https://www.primicias.ec/economia/desempleo-ecuador-mayo2026-empleo-adecuado-subempleo-informal-trabajadores-inec-126077/" target="_blank" rel="noopener">Primicias</a> · <a href="https://www.expreso.ec/economia-y-negocios/significa-empleo-adecuado-ecuador-sigue-estancado-36-6-286685.html" target="_blank" rel="noopener">Expreso</a></li>
+      <li>Empleo adecuado de jóvenes de 18 a 29 años (28,0% → 34,6%): <a href="https://www.teleamazonas.com/actualidad/noticias/economia/empleo-joven-ecuador-inec-2026-121696/" target="_blank" rel="noopener">Teleamazonas</a></li>
+      <li>Sueldo básico 2026 de $482 (Acuerdo MDT-2025-195): <a href="https://www.eldiario.ec/ecuador/el-salario-basico-unificado-de-ecuador-sera-de-482-dolares-para-2026-el-aumento-es-de-12-dolares-15122025/" target="_blank" rel="noopener">El Diario</a></li>
+      <li>Salario mínimo interprofesional de España 2026 (Real Decreto 126/2026): <a href="https://www.fieldfisher.com/es-es/locations/espana/actualidad/salario-minimo-interprofesional-2026" target="_blank" rel="noopener">Fieldfisher</a> · <a href="https://www.csif.es/va/noticia/portada/castillayleonempresaprivada/articulo/85925" target="_blank" rel="noopener">CSIF</a></li>
+      <li>Nuevo Reglamento de Extranjería en vigor desde el 20 de mayo de 2025: <a href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2025/200525-nuevo-reglamento-extranjeria.aspx" target="_blank" rel="noopener">La Moncloa</a> · trabajo de hasta 30 h para estudiantes: <a href="https://www.caixabank.es/particular/nuevos-residentes/trabajar-en-espana-con-visa-estudiante-p.html" target="_blank" rel="noopener">CaixaBank</a></li>
+      <li>Ecuatorianos detenidos en la frontera de EE. UU. en 2025: <a href="https://elmercurio.com.ec/?p=1237098" target="_blank" rel="noopener">El Mercurio</a></li>
+      <li>Nacionalidad española de ecuatorianos en 2025 (INE): <a href="https://www.expreso.ec/politica/nacionalidad-espanola-ecuatorianos-crecio-2025-son-cifras-283798.html" target="_blank" rel="noopener">Expreso</a> · ecuatorianos en España, censo 2021: <a href="https://www.primicias.ec/sociedad/ecuatorianos-migrantes-espana-censo-102657/" target="_blank" rel="noopener">Primicias</a></li>
+      <li>Identidad, servicios y proceso de NEXORA: Presentación Corporativa 2026 de NEXORA GROUP.</li>
+    </ol>
+    <div class="foot">
+      <img src="img/logo-blanco.svg" alt="NEXORA">
+      <span>Propuesta preparada por Pro Motion Sport Marketing · Noviembre 2026 · Documento de trabajo, sujeto a validación normativa de NEXORA.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const CH='<svg class="chev"><use href="#ch"/></svg>';
+const PH=[
+{
+ id:'fase-1', n:'01', name:'Expectativa', theme:'', days:'Días 1 – 10',
+ big:'Algo no <em>cuadra.</em>',
+ lead:'Diez días para instalar una pregunta incómoda sin vender nada. La cuenta se ve como NEXORA, pero las piezas no hablan de servicios: hablan de la persona, de su año repetido y de una puerta que no abre.',
+ facts:[['Objetivo','Que la persona se reconozca y quiera saber qué viene el día 11.'],['Conciencia','No sabe que tiene un problema → lo siente.',1],['Emoción','Incomodidad que se vuelve curiosidad.'],['No hacemos','Nombrar servicios, precios ni «escríbenos».'],['Extra','Los comentarios de esta fase son la materia prima de la Fase 3.']],
+ reels:[
+  {id:'E1',t:'Doce dólares',img:'consulta.jpg',dur:'30–35 s',fmt:'Hablando a cámara + B-roll',est:'13 · El Espejo',pil:'Validación emocional',per:'Profesional estancado',gat:'Identificación',
+   ht:'El básico subió <mark>$12</mark>.<br>¿Y tú?',
+   vis:'Una mano cuenta billetes de un dólar sobre la mesa de la cocina y se detiene en el doce.',
+   ver:'«Este año el sueldo básico subió doce dólares. Doce.»',
+   pr:'«Pero este video no es para decirte que renuncies mañana.»',
+   sc:[['0–3 s','Este año el sueldo básico subió doce dólares. Doce.'],['3–5 s','Pero este video no es para decirte que renuncies mañana.'],['5–15 s','Es para que hagas una cuenta. ¿Cuántos años llevas en el mismo puesto? ¿Cuántos compañeros del colegio ya no viven en el país?'],['15–25 s','Si las dos respuestas te incomodaron, no fue por flojo. Madrugas, aguantas el bus, te quedas una hora más.'],['25–32 s','A lo mejor el techo no eras tú.']],
+   cta:'Texto final: «En 10 días te contamos qué hay del otro lado.» Sin pedir nada más.',
+   nota:'Fuente en el texto del post: Acuerdo MDT-2025-195 ($470 → $482).'},
+  {id:'E2',t:'¿Qué te frena?',img:'relocation.jpg',dur:'40–45 s',fmt:'Entrevistas en la calle',est:'30 · Máquina de comentarios',pil:'Validación emocional',per:'Todos los perfiles',gat:'Curiosidad',
+   ht:'Le preguntamos a 30 personas en Quito:<br><mark>¿te irías a Europa?</mark>',
+   vis:'Un micrófono con el chevron cian frente a gente en La Carolina; luego en el Malecón 2000 y en el centro de Cuenca.',
+   ver:'«Si mañana pudieras irte a Europa con papeles, ¿te irías?»',
+   pr:'N/A en formato calle: la credibilidad la ponen las respuestas reales.',
+   sc:[['0–3 s','Si mañana pudieras irte a Europa con papeles, ¿te irías?'],['3–15 s','Cinco respuestas rápidas, alternando «sí, de una» y «no sé».'],['15–35 s','Segunda pregunta: «¿Y qué te frena?» La plata. Los papeles. Que me estafen. Mis hijos. No sé por dónde empezar.'],['35–42 s','Pantalla azul: «Casi todos dijeron que sí. Casi nadie sabía por dónde empezar.»']],
+   cta:'«¿Y a ti qué te frena? Te leemos en comentarios.»',
+   nota:'Respuestas reales, sin libreto, con cesión de imagen firmada. Las objeciones que salgan aquí guían los reels de la Fase 3.'},
+  {id:'E3',t:'La puerta',img:'documentos.jpg',dur:'10–12 s',fmt:'Visual sin voz, música con tensión',est:'18 · El Momento WTF (versión corta)',pil:'Validación emocional',per:'Profesional estancado',gat:'Sorpresa',
+   ht:'Año 1.<br>Año 2.<br><mark>Año 3…</mark>',
+   vis:'Alguien empuja una puerta pesada de oficina que no abre. La cámara gira: a su espalda hay otra puerta abierta, con luz fría y una montaña nevada al fondo.',
+   ver:'Sin voz. Solo el golpe de la puerta y la respiración.',
+   pr:'N/A en un teaser visual.',
+   sc:[['0–6 s','Tres empujones; el texto cambia con cada uno: Año 1, Año 2, Año 3.'],['6–9 s','Giro de cámara hacia la puerta abierta y la montaña.'],['9–12 s','Aparece el chevron cian sobre fondo azul: «Día 11.»']],
+   cta:'Ninguna. El misterio es la llamada a la acción.',
+   nota:'Es la primera pieza de la cuenta. Se usa también como anuncio de alcance.'}
+ ],
+ caros:[
+  {id:'C-E1',t:'Test: ¿llegaste a tu techo?',fmt:'Checklist',pil:'Desafío',per:'Estancado · ambicioso',
+   sl:['¿Llegaste a tu techo?<br>Marca las que te pasan.','☐ Llevas más de 2 años en el mismo cargo.','☐ Tu sueldo sube al ritmo del básico.','☐ Trabajas en algo que no estudiaste.','☐ La mitad de tu promoción ya vive afuera.','☐ Buscaste «cómo irme a Europa» pasadas las 11 de la noche.','☐ Te frena más el miedo a una estafa que la plata.','¿4 o más?<br>Lo que publicamos el día 11 es para ti.'],
+   cap:'<b>Texto:</b> «No es para sentirte mal. Es para ponerle nombre a algo.» <b>CTA:</b> comenta tu número.'},
+  {id:'C-E2',t:'Tres cifras que nadie te pone juntas',fmt:'Datos uno por lámina',pil:'Actualidad',per:'Escéptico',
+   sl:['Tres cifras de 2026 que nadie te pone juntas.','<b>36,6</b> de cada 100 personas en la fuerza laboral tienen empleo adecuado.<small>INEC, mayo 2026</small>','Entre los 18 y los 29 años: <b>34,6</b>.<small>INEC, mayo 2026</small>','El sueldo básico 2026: <b>$482</b>. Subió $12.<small>MDT-2025-195</small>','No te lo mostramos para que te deprimas.','El día 11 te mostramos otras cifras.<br>Las del otro lado.'],
+   cap:'<b>CTA:</b> «¿Cuál de las tres te pegó más?» Fuentes completas en el texto del post.'}
+ ],
+ stories:['Encuesta: «Si supieras cómo hacerlo en regla, ¿te irías a Europa?» Sí / Ya lo estoy pensando.','Caja de preguntas: «¿Qué te frena?»','Cuenta regresiva al día 11 con el chevron cian.','Repost anónimo de los comentarios más fuertes de E1 y E2.'],
+ kpi:['Retención al 50% de E1 y E3.','Comentarios en E2 y en el test (materia prima de la Fase 3).','Respuestas a la caja «¿Qué te frena?».','Personas que activan el recordatorio de la cuenta regresiva.']
+},
+{
+ id:'fase-2', n:'02', name:'Atención', theme:'navy', days:'Días 11 – 24',
+ big:'Hay otro camino.<br><em>Y tiene papeles.</em>',
+ lead:'El día 11 NEXORA da la cara. Durante dos semanas, cada pieza deja algo útil: una norma que pocos conocen, un mito desarmado, una comparación honesta. El 80% enseña; el 20% presenta a la marca.',
+ facts:[['Objetivo','Revelar NEXORA y dejar instalada la idea de que existen rutas en regla.'],['Conciencia','Siente el problema → conoce la salida.',2],['Emoción','Alivio y curiosidad práctica.'],['No hacemos','Pedir la evaluación todavía.'],['Palabras clave','ESTUDIAR · CUENTA · RUTA (respuesta automática por DM).']],
+ reels:[
+  {id:'A1',t:'Día 11: te debíamos una respuesta',img:'asesora.jpg',dur:'40 s',fmt:'Vocero a cámara + gráficos',est:'35 · Manifiesto de serie',pil:'Disrupción',per:'Escéptico',gat:'Sorpresa',
+   ht:'Te debíamos<br>una <mark>respuesta.</mark>',
+   vis:'El chevron cian que cerró los teasers se abre y forma la X del logo de NEXORA.',
+   ver:'«Diez días hablándote del techo. Hoy te decimos quiénes somos y qué no vamos a hacer.»',
+   pr:'«Pero primero, lo que no hacemos: no vendemos visas. Nadie puede venderte una.»',
+   sob:[['Prueba','Somos NEXORA GROUP, una firma con base en Suiza que acompaña proyectos de visado, estudios, familia y llegada a Europa.'],['Promesa','No vas a volver a pagarle a nadie sin saber antes si tu caso tiene camino.'],['Filtro','Si buscas a alguien que te diga «sí o sí», no somos nosotros.']],
+   sc:[['12–30 s','Lo que sí hacemos: escuchar tu caso, decirte qué ruta aplica, ordenar tu expediente y acompañarte hasta donde llega el servicio.'],['30–40 s','Estas semanas te vamos a explicar cada ruta, una por una, sin letra chiquita.']],
+   cta:'«Síguenos. Cada semana, una ruta explicada.»',nota:''},
+  {id:'A2',t:'30 horas',img:'estudiante.jpg',dur:'35 s',fmt:'Vocero a cámara + texto en pantalla',est:'15 · Vacío de información',pil:'Revelación',per:'Recién graduado',gat:'Descubrimiento',
+   ht:'Estudiar en España<br>ya no es <mark>solo estudiar.</mark>',
+   vis:'Un horario semanal en pantalla; se pintan de cian 30 horas.',
+   ver:'«Si haces un máster en España, hoy puedes trabajar hasta treinta horas a la semana. Hasta mayo de 2025 eran veinte.»',
+   pr:'«Pero no cualquier curso te lo da. Un curso de idiomas, por ejemplo, va por otro lado.»',
+   sc:[['5–15 s','Desde el 20 de mayo de 2025 rige un nuevo reglamento de extranjería. En grados, másteres y doctorados, el permiso para trabajar viene con la estancia.'],['15–25 s','Traducido: puedes estudiar y cubrir parte de tus gastos. El trabajo tiene que encajar con tus clases.'],['25–32 s','Lo que no puedes es usar el estudio como excusa para trabajar cuarenta horas. Eso te puede costar la estancia.']],
+   cta:'«Comenta ESTUDIAR y te mandamos qué estudios entran.»',
+   nota:'Validar con NEXORA antes de publicar. Fuente: RD 1155/2024.'},
+  {id:'A3',t:'Te dijeron tres cosas. Una es verdad.',img:'documentos.jpg',dur:'45 s',fmt:'Vocero a cámara, ritmo rápido',est:'19 · Desafío contracorriente',pil:'Disrupción',per:'El que no sabe por dónde empezar',gat:'Curiosidad',
+   ht:'«Para irte a Europa<br>necesitas <mark>un tío allá.</mark>»',
+   vis:'Tres papeles adhesivos en una pared. El vocero arranca uno por uno.',
+   ver:'«Te dijeron tres cosas sobre irte a Europa. Solo una es verdad.»',
+   pr:'La resta va dentro del guion: el tercer mito sí es cierto.',
+   sc:[['5–15 s','«Necesitas un familiar allá.» Ayuda si quieres reagrupar a tu familia. Para estudiar o trabajar, no es requisito.'],['15–28 s','«Solo se puede yendo sin papeles.» Esa ruta la conoces: deuda, riesgo y años sin ver a tu familia. Las rutas en regla piden tiempo y documentos, y existen.'],['28–42 s','«Necesitas plata.» Esta es verdad. Casi cualquier visado te pide demostrar medios económicos. La diferencia está en saber cuánto y para qué ruta desde el día uno, y no enterarte en la cita.']],
+   cta:'«¿Cuál te habían dicho a ti? Comenta 1, 2 o 3.»',nota:''},
+  {id:'A4',t:'Dos caminos',img:'visado.jpg',dur:'30 s',fmt:'Pantalla dividida + voz en off',est:'29 · Esqueletos en versus',pil:'Validación emocional',per:'Familia partida en dos',gat:'Identificación',
+   ht:'Los dos salieron de Cuenca<br><mark>el mismo mes.</mark>',
+   vis:'Pantalla partida: a la izquierda, botas embarradas y una mochila; a la derecha, una carpeta azul con documentos.',
+   ver:'«Los dos salieron de Cuenca el mismo mes. Él le pagó a alguien que le prometió que llegaba. Ella pasó tres meses armando una carpeta.»',
+   pr:'N/A en narrativa: el dato de la frontera hace de ancla.',
+   sc:[['5–15 s','Izquierda: selva, deuda, frontera. Derecha: matrícula, visado, NIE.'],['15–22 s','Dato en pantalla: en 2025, 4.949 ecuatorianos fueron detenidos en la frontera de EE. UU. con México.'],['22–30 s','«Él todavía no sabe si se puede quedar. Ella ya sabe hasta en qué barrio vive. Los dos tenían las mismas ganas.»']],
+   cta:'«Envíaselo a alguien que lo esté pensando.»',
+   nota:'Línea roja: el contraste va contra el riesgo, nunca contra la persona que migró.'}
+ ],
+ caros:[
+  {id:'C-A1',t:'$482 contra €1.221',fmt:'Antes y después, honesto',pil:'Revelación',per:'Estancado · escéptico',
+   sl:['$482 contra €1.221.<br>Antes de emocionarte, lee hasta el final.','Ecuador 2026: sueldo básico <b>$482</b> al mes.','España 2026: salario mínimo <b>€1.221</b> al mes, en 14 pagas. €17.094 al año.','Sí: es más del doble.','Pero en España el arriendo, el transporte y la comida también cuestan más. En Madrid o Barcelona, bastante más.','La pregunta útil no es «¿cuánto gano?».<br>Es «¿cuánto me queda?».','Esa cuenta depende de la ciudad, la ruta y tu familia. Comenta CUENTA y te mandamos la plantilla.'],
+   cap:'El «pero» de la lámina 5 es lo que vuelve creíble a la marca. <b>CTA:</b> palabra clave CUENTA.'},
+  {id:'C-A2',t:'5 rutas en regla hacia Europa',fmt:'Curaduría por servicio',pil:'Curaduría',per:'El que no sabe por dónde empezar',
+   sl:['5 rutas en regla hacia Europa.<br>¿Cuál es la tuya?','<b>VISA</b><br>Tienes un motivo concreto para viajar y necesitas el visado correcto.','<b>STUDY</b><br>Quieres hacer un grado, un máster o una FP.','<b>FAMILY</b><br>Tu familia ya vive allá, o quieres llevar a la tuya.','<b>RELOCATION</b><br>Ya tienes el visado y te falta organizar la llegada.','<b>DOCUMENTS</b><br>Te falta el NIE, una carta de invitación u ordenar tus papeles.','¿No sabes cuál es la tuya? Por eso empezamos escuchando tu caso.'],
+   cap:'Usa las fotos del brochure en cada lámina de servicio. <b>CTA:</b> comenta RUTA.'},
+  {id:'C-A3',t:'8 palabras que vas a escuchar si te vas a España',fmt:'Glosario',pil:'Utilidad práctica',per:'Recién graduado · el que ya decidió',
+   sl:['8 palabras que vas a escuchar si te vas a España.','<b>NIE</b><br>Número de Identidad de Extranjero: lo piden en casi cualquier trámite.','<b>Apostilla</b><br>El sello que hace válido tu documento ecuatoriano en otro país.','<b>Homologación</b><br>El trámite para que tu título valga allá.','<b>Reagrupación familiar</b><br>La vía para que tu familia viva contigo legalmente.','<b>Empadronamiento</b><br>Registrarte en el municipio donde vives.','<b>TIE</b><br>La tarjeta física que demuestra tu residencia.','<b>Visado de estudios</b><br>Para entrar a estudiar. Desde 2025, con hasta 30 h de trabajo.','¿Cuál no conocías? Comenta la palabra.'],
+   cap:'Pieza de guardado. Términos técnicos usados y traducidos en la misma línea.'}
+ ],
+ stories:['Detrás de cámara del equipo preparando el día 11.','Quiz: «¿Qué es el NIE?» con tres opciones.','Sticker «Pregúntale a NEXORA» y respuestas en video corto del vocero.','Recordatorio de las palabras clave activas.'],
+ kpi:['Compartidos de A4 y del carrusel de rutas.','Seguidores nuevos y visitas al perfil.','Guardados del glosario y de la comparación salarial.','Comentarios con ESTUDIAR, CUENTA y RUTA.']
+},
+{
+ id:'fase-3', n:'03', name:'Convencimiento', theme:'', days:'Días 25 – 38',
+ big:'Así <em>trabajamos.</em>',
+ lead:'Ya saben que hay un camino. Ahora necesitan confiar en quien los acompaña. Mostramos el método, las caras, los límites y casos reales. Cada pieza responde una objeción que la gente escribió en las fases anteriores.',
+ facts:[['Objetivo','Pasar de «me interesa» a «confío en ellos».'],['Conciencia','Conoce la salida → confía en NEXORA.',3],['Emoción','Confianza y sensación de orden.'],['Regla','Cada pieza responde una objeción real.'],['Momento fuerte','Live con el vocero: «Estudiar en España en 2027».']],
+ reels:[
+  {id:'C1',t:'No te podemos garantizar la visa',img:'asesora.jpg',dur:'40 s',fmt:'Vocero a cámara, plano fijo',est:'10 · Gancho controversial',pil:'Disrupción',per:'Escéptico',gat:'Sorpresa',
+   ht:'Ninguna agencia debería decirte esto.<br><mark>Nosotros sí.</mark>',
+   vis:'El vocero desliza sobre la mesa una hoja que dice «GARANTIZADO» y la rompe.',
+   ver:'«No te podemos garantizar que te aprueben la visa. Y quien te lo garantice te está mintiendo.»',
+   pr:'La resta es el gancho mismo: renunciar a la promesa que todos hacen.',
+   sob:[['Prueba','La decisión la toma el consulado o la oficina de extranjería. No nosotros, ni nadie que te cobre.'],['Promesa','Lo que sí controlamos: que tu expediente no se caiga por un documento sin apostillar o una fecha vencida.'],['Filtro','Si alguien te prometió el «sí» antes de ver tus papeles, este video es para ti.']],
+   sc:[['12–32 s','Escuchamos tu caso. Definimos el servicio. Organizamos los documentos. Te acompañamos. Cuatro pasos, todos por escrito.'],['32–40 s','Te decimos lo que podemos hacer y también lo que no. Por eso puedes confiar en lo primero.']],
+   cta:'«Comenta CLARO y te mandamos qué incluye cada paso.»',nota:''},
+  {id:'C2',t:'Si te cotizaron sin preguntarte esto, desconfía',img:'consulta.jpg',dur:'35 s',fmt:'Tutorial con lista en pantalla',est:'17 · How to Template',pil:'Utilidad práctica',per:'El que no sabe por dónde empezar',gat:'Miedo a cometer un error',
+   ht:'Si te cotizaron sin preguntarte esto,<br><mark>desconfía.</mark>',
+   vis:'Un formulario con seis casillas que se marcan una por una.',
+   ver:'«Si alguien te cotizó un trámite para Europa sin preguntarte estas seis cosas, no sabe qué te está vendiendo.»',
+   pr:'«Pero ojo: tener las seis respuestas no significa que calificas. Significa que ya podemos decírtelo.»',
+   sc:[['6–28 s','Nacionalidad y país donde vives. País de destino. Motivo del viaje. Fechas aproximadas. Tu situación familiar o académica. Los documentos que ya tienes.'],['28–35 s','Con eso te decimos qué ruta aplica, qué falta y cuánto cuesta el acompañamiento.']],
+   cta:'«Escribe RUTA y te mandamos estas preguntas.»',nota:'Las seis preguntas salen tal cual de la página «Antes de comenzar» del brochure.'},
+  {id:'C3',t:'Lo que nos comentaste (serie de 3)',img:'relocation.jpg',dur:'30–40 s c/u',fmt:'Reacción a comentarios reales',est:'8 · Respondiendo a comentario polémico',pil:'Validación emocional',per:'Según el comentario',gat:'Identificación',
+   ht:'«Tengo 38.<br><mark>Ya se me pasó el tren.</mark>»',
+   vis:'Captura del comentario (anonimizada o con permiso) junto al vocero.',
+   ver:'«Alguien nos escribió que a los 38 ya se le pasó el tren. Vamos a revisarlo.»',
+   pr:'«Pero no te vamos a decir que la edad no importa: en algunas rutas pesa.»',
+   sc:[['6–25 s','Hay rutas donde la edad no es requisito y otras donde sí cuenta. Por eso preguntamos antes de responder.'],['25–35 s','Episodios 2 y 3, con las objeciones que más se repitan: «¿y si me estafan?» y «no tengo la plata».']],
+   cta:'«Deja tu duda: la respondemos en el próximo video.»',nota:'El comentario del gancho es un ejemplo: se reemplaza por los que de verdad lleguen en la Fase 1.'},
+  {id:'C4',t:'Un caso, paso a paso',img:'familia.jpg',dur:'45–60 s',fmt:'Storytelling con documentos',est:'33 · Análisis de caso',pil:'Revelación',per:'Familia partida en dos',gat:'Identificación',
+   ht:'[Nombre] tardó [N] meses<br>en traer a su hija.<br><mark>Así fue cada paso.</mark>',
+   vis:'Una carpeta que se abre; cada documento aparece sobre un mapa entre Ecuador y España.',
+   ver:'«[Nombre] tardó [N] meses en traer a su hija a [ciudad]. Te mostramos cada paso.»',
+   pr:'«Pero su caso no es el tuyo: los plazos cambian según el consulado y los papeles.»',
+   sc:[['6–40 s','Línea de tiempo real del caso: qué se pidió, qué faltaba, qué se corrigió, cuánto tomó cada etapa.'],['40–55 s','Lo que hizo la diferencia: el expediente completo desde la primera entrega.']],
+   cta:'«Si tu caso se parece, escribe FAMILIA.»',nota:'Solo con un caso real y consentimiento escrito. Los corchetes se llenan con datos verdaderos; no se inventa.'},
+  {id:'C5',t:'La persona que va a leer tu mensaje',img:'contacto.jpg',dur:'30 s',fmt:'Presentación del equipo',est:'27 · El protagonista y su equipo',pil:'Validación emocional',per:'Escéptico',gat:'Identificación',
+   ht:'La persona que va a leer<br><mark>tu mensaje.</mark>',
+   vis:'Un celular recibe «Hola, quiero información». Corte a la asesora leyéndolo en su escritorio.',
+   ver:'«Cuando nos escribes, no te contesta un robot. Te contesta [Nombre], desde [ciudad].»',
+   pr:'«Pero no te respondemos a las tres de la mañana: te respondemos en horario de oficina, y te respondemos.»',
+   sc:[['6–22 s','Quién es, cuánto lleva acompañando procesos, qué idiomas habla, qué tipo de casos ve cada semana.'],['22–30 s','Horario real de respuesta.']],
+   cta:'«Escríbenos. Te respondemos en menos de [X] horas hábiles.»',nota:'El tiempo de respuesta debe ser real y medible.'}
+ ],
+ caros:[
+  {id:'C-C1',t:'7 señales de que te quieren estafar con un trámite',fmt:'Lista de alerta',pil:'Utilidad práctica',per:'Escéptico · familia',
+   sl:['7 señales de que te quieren estafar con un trámite para Europa.','Te <b>garantizan</b> la aprobación.','Te cotizan sin preguntar nada de tu caso.','Te piden pagar a una cuenta personal, sin contrato ni factura.','Te venden una «cita» o un «cupo» en el consulado.','Te sugieren mentir o inflar datos en el formulario.','No puedes verificar quiénes son: sin dirección, sin web, sin nombres.','Te presionan con «solo hoy».','Envíaselo a quien esté pensando en irse.'],
+   cap:'La pieza con más potencial de compartidos. NEXORA cumple las siete al revés, y eso se nota sin decirlo.'},
+  {id:'C-C2',t:'Qué pasa después de que nos escribes',fmt:'Proceso en 4 pasos',pil:'Utilidad práctica',per:'Todos',
+   sl:['Qué pasa después de que nos escribes.','<b>1 · Conocemos tu caso</b><br>Escuchamos y analizamos tu situación.','<b>2 · Definimos el servicio</b><br>Qué acompañamiento aplica y qué pasos siguen.','<b>3 · Organizamos el proceso</b><br>Documentos y etapas del trámite.','<b>4 · Te acompañamos</b><br>Seguimiento personal, dentro del alcance contratado.','Y algo que decimos desde el primer mensaje: ningún servicio implica garantía de aprobación.','Escribe RUTA para empezar por el paso 1.'],
+   cap:'Los cuatro pasos son los del brochure, con la misma iconografía de números.'},
+  {id:'C-C3',t:'Documentos que conviene tener a la mano',fmt:'Checklist',pil:'Utilidad práctica',per:'El que ya decidió',
+   sl:['Antes de tu primera conversación, revisa si tienes esto.','☐ Pasaporte vigente, con tiempo de sobra antes de que caduque.','☐ Títulos y notas, si vas a estudiar.','☐ Partidas de nacimiento o matrimonio, si es un trámite familiar.','☐ Récord policial.','☐ Respaldo de tus ingresos o ahorros.','Antes de apostillar nada, pregunta cuál te piden. Cada ruta pide distinto.'],
+   cap:'<b>Nota:</b> la lista es general; NEXORA la ajusta por ruta antes de publicar.'}
+ ],
+ stories:['Live mensual con el vocero: «Estudiar en España en 2027».','«Un día en NEXORA»: el expediente por dentro, ordenado y etiquetado.','Testimonios en video, solo si son reales y con consentimiento.','Sticker de preguntas y respuestas del vocero.'],
+ kpi:['Conversaciones iniciadas por DM.','Respuestas a historias.','Asistencia y preguntas en el live.','Guardados del checklist y compartidos del carrusel de estafas.']
+},
+{
+ id:'fase-4', n:'04', name:'Acción', theme:'navy', days:'Días 39 – 52 y luego permanente',
+ big:'Tu próximo paso<br><em>comienza aquí.</em>',
+ lead:'Una sola acción en toda la fase: escribir RUTA. Llega un mensaje con las seis preguntas, la persona las responde cuando puede y elige el día de su evaluación inicial. La urgencia sale de cupos y fechas que existen.',
+ facts:[['Objetivo','Convertir la confianza en evaluaciones agendadas.'],['Conciencia','Confía en NEXORA → actúa.',4],['Oferta','Evaluación inicial de tu proyecto (formato y cupos los define NEXORA).'],['Mecánica','RUTA por comentario o DM → 6 preguntas → agenda por WhatsApp.'],['Regla','Urgencia solo con fechas reales.']],
+ reels:[
+  {id:'AC1',t:'Guardar videos no arma un expediente',img:'consulta.jpg',dur:'45 s',fmt:'Vocero a cámara + B-roll de marca',est:'2 · Pitch de venta perfecto',pil:'Utilidad práctica',per:'El indeciso',gat:'Promesa de resultado',
+   ht:'Si llevas semanas pensándolo,<br><mark>esto es lo que sigue.</mark>',
+   vis:'La galería de guardados de un celular llena de reels de NEXORA; se cierra y aparece una carpeta azul vacía.',
+   ver:'«Si llevas semanas guardando nuestros videos, ya hiciste lo difícil: decidir que quieres saber.»',
+   pr:'«Pero guardar videos no arma un expediente.»',
+   sc:[['5–18 s','El techo que sientes tiene salida, y tiene papeles. Lo que falta es saber cuál es la tuya.'],['18–35 s','En la evaluación inicial revisamos tu caso, te decimos qué ruta aplica, qué documentos necesitas y cuánto cuesta acompañarte. Por escrito.'],['35–45 s','Esta semana tenemos [N] espacios.']],
+   cta:'«Escribe RUTA. Te llegan seis preguntas y eliges el día.»',nota:'[N] es la capacidad real de la semana.'},
+  {id:'AC2',t:'Lo que pasa cuando escribes RUTA',img:'contacto.jpg',dur:'25 s',fmt:'Grabación de pantalla',est:'17 · How to Template',pil:'Utilidad práctica',per:'Inseguro',gat:'Curiosidad',
+   ht:'Lo que pasa 10 segundos después<br>de escribir <mark>RUTA.</mark>',
+   vis:'Pantalla del celular: se escribe RUTA, llega el mensaje, se responden las preguntas, aparece el calendario.',
+   ver:'«Escribes una palabra. Te llegan seis preguntas. Las respondes cuando puedas. Y eliges el día.»',
+   pr:'«Pero no te vamos a decir que sí por chat. Eso se dice después de ver tus papeles.»',
+   sc:[['5–20 s','Demostración real del flujo, sin cortes.'],['20–25 s','Pantalla azul con el chevron: RUTA.']],
+   cta:'«Pruébalo ahora: comenta RUTA.»',nota:'Quita la fricción del primer paso. Se graba con el flujo ya funcionando.'},
+  {id:'AC3',t:'Septiembre de 2027 se decide ahora',img:'estudiante.jpg',dur:'35 s',fmt:'Vocero a cámara + línea de tiempo',est:'28 · El esqueleto del tiempo',pil:'Utilidad práctica',per:'Recién graduado',gat:'Miedo a cometer un error',
+   ht:'¿Máster en septiembre de 2027?<br><mark>Tu reloj ya corre.</mark>',
+   vis:'Un calendario que retrocede de septiembre de 2027 a hoy y marca cada hito.',
+   ver:'«Si quieres empezar un máster en España en septiembre de 2027, el reloj ya está corriendo.»',
+   pr:'«Pero no hace falta tenerlo todo hoy. Hace falta empezar en orden.»',
+   sc:[['5–28 s','Elegir programa y postular. Esperar la admisión. Apostillar documentos. Pedir la cita del visado. Viajar.'],['28–35 s','Cada etapa tiene su tiempo; si una se atrasa, empuja a todas las demás.']],
+   cta:'«Escribe ESTUDIAR y armamos tu calendario.»',nota:'Plazos exactos por universidad y consulado: los confirma NEXORA antes de grabar.'},
+  {id:'AC4',t:'«Lo voy a pensar»',img:'visado.jpg',dur:'30 s',fmt:'Vocero a cámara, tono íntimo',est:'13 · El Espejo (cierre de campaña)',pil:'Validación emocional',per:'Estancado en su plan B',gat:'Identificación',
+   ht:'«Lo voy a pensar.»<br><mark>¿Cuántas veces lo has dicho?</mark>',
+   vis:'La misma puerta de E3. Esta vez la persona se da la vuelta y camina hacia la que está abierta.',
+   ver:'«“Lo voy a pensar.” Lo dijiste el año pasado. Y el anterior.»',
+   pr:'«Pero esta vez no te pedimos que decidas irte. Te pedimos una conversación.»',
+   sc:[['6–22 s','Sales de esa conversación con una respuesta: tu proyecto tiene una ruta, o todavía no. Las dos te sirven.'],['22–30 s','El techo no eras tú. Pero el próximo paso sí te toca a ti.']],
+   cta:'«Escribe RUTA.»',nota:'Cierra el arco que abrió el teaser E3: misma puerta, otra decisión.'}
+ ],
+ caros:[
+  {id:'C-AC1',t:'La evaluación inicial, sin letra chiquita',fmt:'Incluye / no incluye',pil:'Utilidad práctica',per:'Escéptico · indeciso',
+   sl:['La evaluación inicial, sin letra chiquita.','<b>Incluye</b><br>Revisamos tu caso con las seis preguntas.','<b>Incluye</b><br>Te decimos qué ruta aplica y qué documentos necesitarías.','<b>Incluye</b><br>El alcance y el costo del acompañamiento, por escrito.','<b>No incluye</b><br>Garantía de aprobación. Nadie puede darla.','<b>No incluye</b><br>Presión. Si no es tu momento, te lo decimos.','Esta semana: [N] espacios.<br>Escribe RUTA.'],
+   cap:'Formato y precio de la evaluación por confirmar con NEXORA.'},
+  {id:'C-AC2',t:'¿Cuál es tu próximo paso?',fmt:'Decisión guiada',pil:'Desafío',per:'Indeciso',
+   sl:['¿Cuál es tu próximo paso? Responde y llega a tu ruta.','¿Tu familia ya vive en Europa?<br>→ <b>FAMILY</b>','¿Quieres estudiar?<br>→ <b>STUDY</b>','¿Ya tienes el visado?<br>→ <b>RELOCATION</b>','¿Te falta un papel o el NIE?<br>→ <b>DOCUMENTS</b>','¿Otro motivo de viaje?<br>→ <b>VISA</b>','Comenta el nombre de tu ruta y te escribimos.'],
+   cap:'Cada respuesta activa una respuesta automática distinta según la palabra.'}
+ ],
+ stories:['Enlace a WhatsApp todos los días.','Cuenta regresiva para el cierre de la agenda semanal (real).','Preguntas frecuentes de la evaluación, una por día.','Mensaje directo a quienes respondieron la caja de la Fase 1.'],
+ kpi:['Evaluaciones agendadas por semana.','Asistencia a la evaluación.','Contratos firmados.','Costo por evaluación agendada.']
+}
+];
+
+const esc=s=>s;
+function reelHTML(r){
+  const sob=r.sob?r.sob.map(s=>`<li class="sob"><span>${s[0]}</span><div>${s[1]}</div></li>`).join(''):'';
+  const sobStart=r.sob?'<li class="sob"><span>5–12 s</span><div><b style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--navy)">Sobredimensión de valor</b></div></li>':'';
+  return `<article class="reel fade">
+   <div class="phone"><div class="bg" style="background-image:url(img/${r.img})"></div><div class="shade"></div><div class="band"></div>
+     <div class="id">REEL ${r.id}</div><div class="ht">${r.ht}</div>
+     <div class="bar"><i></i></div><div class="ft"><span>0:03 / ${r.dur.split('–').pop().replace(' c/u','')}</span><img src="img/logo-blanco.svg" alt=""></div></div>
+   <div class="rbody">
+     <h4>${r.id} · ${r.t}</h4>
+     <div class="tags"><span class="tag">${r.fmt}</span><span class="tag">${r.dur}</span><span class="tag c">Estructura ${r.est}</span><span class="tag c">Pilar: ${r.pil}</span><span class="tag">Perfil: ${r.per}</span><span class="tag">Gatillo: ${r.gat}</span></div>
+     <div class="hooks"><div><b>Gancho verbal</b>${r.ver}</div><div><b>Gancho visual</b>${r.vis}</div><div><b>Gancho textual</b>${r.ht.replace(/<br>/g,' ').replace(/<\/?mark>/g,'')}</div></div>
+     <div class="primer"><b>El «pero»</b>${r.pr}</div>
+     <ul class="script">${sobStart}${sob}${r.sc.map(s=>`<li><span>${s[0]}</span><div>${s[1]}</div></li>`).join('')}</ul>
+     <div class="cta">${CH}<div>${r.cta}</div></div>
+     ${r.nota?`<div class="note">${r.nota}</div>`:''}
+   </div></article>`;
+}
+function caroHTML(c){
+  const n=c.sl.length;
+  const slides=c.sl.map((s,i)=>{
+    const cls=i===0?'s0':(i===n-1?'s3':(i%2?'s1':'s2'));
+    const lg=(i===0)?'logo-blanco.svg':'logo.svg';
+    return `<div class="sl ${cls}"><span class="k">${String(i+1).padStart(2,'0')}/${String(n).padStart(2,'0')}</span>${s}<img class="lg" src="img/${lg}" alt=""></div>`;
+  }).join('');
+  return `<article class="caro fade"><div class="caro-top"><h4>${c.id.replace('C-','Carrusel ')} · ${c.t}</h4>
+   <div class="tags" style="margin:0"><span class="tag">${n} láminas · 4:5</span><span class="tag c">Formato: ${c.fmt}</span><span class="tag c">Pilar: ${c.pil}</span><span class="tag">Perfil: ${c.per}</span></div></div>
+   <div class="strip" tabindex="0" aria-label="Láminas del carrusel">${slides}</div><p class="cap">${c.cap}</p></article>`;
+}
+function phaseHTML(p){
+  const meter=lvl=>`<div class="meter">${[1,2,3,4].map(i=>`<i class="${i<=lvl?'on':''}"></i>`).join('')}</div>`;
+  return `<section class="sec ${p.theme}" id="${p.id}">
+  ${p.theme==='navy'?'<svg class="deco" style="left:-140px;bottom:-80px;width:460px;height:460px" viewBox="0 0 400 400" aria-hidden="true"><path d="M-40 60 H180 L340 220 V460" stroke="#63c1d6" stroke-width="46" fill="none" opacity=".16" stroke-linejoin="round"/></svg>':''}
+  <div class="wrap">
+   <div class="phase-top fade"><div><div class="kicker">Fase ${p.n} · ${p.name} · ${p.days}</div><div class="big" style="margin-top:14px">${p.big}</div><p class="lead">${p.lead}</p></div>
+    <div class="facts">${p.facts.map(f=>`<div><b>${f[0]}</b><span>${f[1]}${f[2]?meter(f[2]):''}</span></div>`).join('')}</div></div>
+   <div class="subhead">${CH}Reels · ${p.reels.length} piezas</div>
+   <div class="reels">${p.reels.map(reelHTML).join('')}</div>
+   <div class="subhead">${CH}Carruseles · ${p.caros.length} piezas</div>
+   <div class="carousels">${p.caros.map(caroHTML).join('')}</div>
+   <div class="subhead">${CH}Historias y medición de la fase</div>
+   <div class="duo fade"><div class="box"><h5>${CH}Historias diarias</h5><ul>${p.stories.map(s=>`<li>${s}</li>`).join('')}</ul></div>
+    <div class="box"><h5>${CH}Qué medimos</h5><ul>${p.kpi.map(s=>`<li>${s}</li>`).join('')}</ul></div></div>
+  </div></section>`;
+}
+document.getElementById('phases').innerHTML=PH.map(phaseHTML).join('');
+
+// hero meta + rhythm
+const nReels=PH.reduce((a,p)=>a+p.reels.length,0)+2; // C3 = serie de 3
+const nCaros=PH.reduce((a,p)=>a+p.caros.length,0);
+document.getElementById('heroMeta').innerHTML=`<div><b>52</b>días</div><div><b>4</b>fases</div><div><b>${nReels}</b>reels</div><div><b>${nCaros}</b>carruseles</div>`;
+document.getElementById('rhythm').innerHTML=`<div><b>${nReels}</b><span>reels guionizados (la serie C3 cuenta como 3)</span></div><div><b>${nCaros}</b><span>carruseles con todas sus láminas</span></div><div><b>3–5</b><span>publicaciones por semana en el feed</span></div><div><b>7/7</b><span>historias todos los días</span></div>`;
+
+// calendar
+const CAL=[
+ ['Expectativa','Días 1 – 10',[[1,'r','E3 · La puerta'],[3,'r','E1 · Doce dólares'],[5,'c','Test: ¿llegaste a tu techo?'],[7,'r','E2 · ¿Qué te frena?'],[9,'c','Tres cifras que nadie te pone juntas'],[10,'h','Cuenta regresiva · «Mañana»']]],
+ ['Atención','Días 11 – 24',[[11,'r','A1 · Te debíamos una respuesta'],[13,'r','A2 · 30 horas'],[15,'c','5 rutas en regla'],[17,'r','A3 · Tres cosas, una es verdad'],[19,'c','$482 contra €1.221'],[21,'r','A4 · Dos caminos'],[23,'c','Glosario: 8 palabras']]],
+ ['Convencimiento','Días 25 – 38',[[25,'r','C1 · No te garantizamos la visa'],[27,'c','7 señales de estafa'],[29,'r','C2 · Las seis preguntas'],[30,'h','Live: Estudiar en España 2027'],[31,'r','C3 · Comentarios, ep. 1'],[33,'c','Qué pasa después de escribirnos'],[34,'r','C4 · Un caso, paso a paso'],[36,'r','C5 · Quién lee tu mensaje'],[37,'c','Documentos a la mano'],[38,'r','C3 · Comentarios, ep. 2']]],
+ ['Acción','Días 39 – 52',[[39,'r','AC1 · Guardar videos no basta'],[41,'c','Evaluación sin letra chiquita'],[43,'r','AC2 · Qué pasa al escribir RUTA'],[45,'r','AC3 · Septiembre de 2027'],[47,'c','¿Cuál es tu próximo paso?'],[49,'r','C3 · Comentarios, ep. 3'],[50,'h','Live de cierre + preguntas'],[51,'r','AC4 · «Lo voy a pensar»']]]
+];
+const lab={r:'REEL',c:'CARRUSEL',h:'HISTORIA'};
+document.getElementById('cal').innerHTML=CAL.map(c=>`<div class="col"><h4>${c[0]}</h4><div class="d">${c[1]}</div><ol>${c[2].map(x=>`<li><span>Día ${x[0]}</span><div><i class="${x[1]}">${lab[x[1]]}</i>${x[2]}</div></li>`).join('')}</ol></div>`).join('');
+
+// reveal + active nav
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+const links=[...document.querySelectorAll('.nav a')];
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-45% 0px -50% 0px'});
+links.forEach(a=>{const s=document.querySelector(a.getAttribute('href'));if(s)so.observe(s)});
+</script>
+</body>
+</html>
