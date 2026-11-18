@@ -218,6 +218,36 @@ section{position:relative}
 .hooks{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
 .hooks div{border-top:3px solid var(--cyan);background:#f6f9fb;padding:10px 12px;font-size:13.5px;color:var(--navy)}
 .hooks b{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan-2);margin-bottom:3px}
+.idea{background:var(--navy);color:#fff;padding:16px 18px;margin-bottom:12px;font-size:16px;line-height:1.5}
+.idea b,.why b{display:block;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);margin-bottom:4px}
+.why{background:var(--cyan-soft);color:var(--navy);padding:12px 18px;margin-bottom:16px;font-size:14.5px}
+.why b{color:#0b6178}
+.ficha{font-size:12px;color:var(--muted);margin-top:14px;padding-top:10px;border-top:1px solid var(--line)}
+.ficha b{color:var(--navy)}
+.scr-h{font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);margin:4px 0 2px}
+.legend{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.legend div{background:#fff;border:1px solid var(--line);padding:18px 20px;font-size:14.5px;color:var(--navy)}
+.legend b{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan-2);margin-bottom:4px}
+@media (max-width:860px){.legend{grid-template-columns:1fr}}
+.who{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
+.who div{background:#f6f9fb;padding:10px 14px;font-size:13.5px;color:var(--navy);border-left:3px solid var(--cyan)}
+.who b{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan-2);margin-bottom:2px}
+.scenes{display:grid;gap:10px;margin-top:8px}
+.scene{border:1px solid var(--line);background:#fff}
+.scene .sh{background:var(--ice);padding:8px 14px;font-size:14px;font-weight:700;color:var(--navy)}
+.scene .sh span{display:inline-block;background:var(--navy);color:#fff;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;margin-right:10px;border-radius:2px}
+.scene .sh em{font-style:normal;font-weight:500;color:var(--muted);font-size:13px}
+.scene dl{display:grid;grid-template-columns:130px 1fr;gap:6px 14px;padding:12px 14px;font-size:14.5px}
+.scene dt{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan-2);padding-top:3px}
+.scene dd{color:var(--ink)}
+.scene dd.say{font-size:15.5px;color:var(--navy);font-weight:500}
+.scene dd.txt{font-weight:700;color:var(--navy)}
+details.tp{margin-top:14px;background:var(--navy);color:#fff}
+details.tp summary{cursor:pointer;padding:12px 16px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cyan)}
+details.tp p{padding:0 16px 16px;font-size:16px;line-height:1.7}
+.post{margin-top:14px;background:#f6f9fb;border-left:3px solid var(--cyan);padding:12px 16px;font-size:14.5px;color:var(--navy)}
+.post b{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan-2);margin-bottom:4px}
+@media (max-width:640px){.who{grid-template-columns:1fr}.scene dl{grid-template-columns:1fr;gap:2px}.scene dt{margin-top:8px}}
 .primer{font-size:14.5px;color:var(--navy);background:linear-gradient(90deg,var(--cyan-soft),transparent);padding:10px 14px;margin-bottom:16px;border-left:3px solid var(--navy)}
 .primer b{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;margin-right:8px}
 .script{list-style:none;font-size:15px;color:var(--ink)}
@@ -413,7 +443,7 @@ details.more[open] summary::before{content:"– ";}
 <section class="sec" id="concepto">
   <div class="wrap">
     <div class="sec-head fade">
-      <div class="kicker">Posicionamiento · se define antes de escribir una sola pieza</div>
+      <div class="kicker">La idea que une toda la campaña</div>
       <h2><svg class="chev"><use href="#ch"/></svg>El concepto de campaña</h2>
     </div>
     <div class="concept">
@@ -428,13 +458,13 @@ details.more[open] summary::before{content:"– ";}
       <dl class="pos fade">
         <dt>Rubro</dt>
         <dd>Movilidad internacional y asesoría para procesos regulares hacia Europa (visados, estudios, familia, llegada y documentos).</dd>
-        <dt>Beneficio central (una frase)</dt>
+        <dt>Qué ofrece NEXORA, en una frase</dt>
         <dd>Te decimos con claridad qué ruta en regla tiene tu proyecto en Europa, qué papeles necesita, y te acompañamos a armarlo.</dd>
-        <dt>Fórmula de posicionamiento</dt>
+        <dt>A quién ayuda y cómo</dt>
         <dd>NEXORA ayuda a ecuatorianos que sienten que llegaron a su techo a preparar su proyecto en Europa por la vía regular, con un expediente ordenado y una persona real que los acompaña.</dd>
-        <dt>Ángulo de tensión</dt>
+        <dt>La idea que incomoda</dt>
         <dd>Llevas años empujando la misma puerta. Te falta otra ruta, no más esfuerzo.</dd>
-        <dt>El contrapeso que nos da credibilidad</dt>
+        <dt>Lo que nos hace creíbles</dt>
         <dd>«Pero no te podemos garantizar la visa. Nadie puede.» Lo que el brochure ya dice —<i>ningún servicio implica garantía de aprobación</i>— se convierte en argumento de venta.</dd>
       </dl>
     </div>
@@ -473,12 +503,12 @@ details.more[open] summary::before{content:"– ";}
       <p>Una tensión sin datos suena a vendehumo. Estas son las cifras que usamos en los guiones; cada una lleva su fuente en el pie del post.</p>
     </div>
     <div class="data fade">
-      <div class="datum"><div class="v">36,6<small>%</small></div><p>de la fuerza laboral de Ecuador tiene empleo adecuado. Casi dos de cada tres, no.</p><span class="src">INEC · ENEMDU, mayo 2026</span><span class="use">Carrusel E2</span></div>
-      <div class="datum"><div class="v">34,6<small>%</small></div><p>de los jóvenes de 18 a 29 años tiene empleo adecuado. Subió desde 28,0%, pero sigue lejos de la mitad.</p><span class="src">INEC · mayo 2025 vs. mayo 2026</span><span class="use">Carrusel E2 · Reel A2</span></div>
-      <div class="datum"><div class="v">$12</div><p>es lo que subió el sueldo básico para 2026: de $470 a $482.</p><span class="src">Acuerdo Ministerial MDT-2025-195</span><span class="use">Reel E1 «Doce dólares»</span></div>
-      <div class="datum"><div class="v">€1.221</div><p>es el salario mínimo en España en 2026, en 14 pagas (€17.094 al año). Más del doble, y con un costo de vida también más alto.</p><span class="src">Real Decreto 126/2026 · BOE</span><span class="use">Carrusel A1</span></div>
-      <div class="datum"><div class="v">30 <small>h/sem</small></div><p>puede trabajar quien estudia un grado, máster o doctorado en España desde el 20 de mayo de 2025. Antes eran 20.</p><span class="src">Reglamento de Extranjería · RD 1155/2024</span><span class="use">Reel A2 «30 horas»</span></div>
-      <div class="datum"><div class="v">4.949</div><p>ecuatorianos fueron detenidos en 2025 en la frontera de EE. UU. con México. La ruta irregular tiene un costo que nadie cotiza.</p><span class="src">Diario El Mercurio (Cuenca), 2025</span><span class="use">Reel A4 «Dos caminos»</span></div>
+      <div class="datum"><div class="v">36,6<small>%</small></div><p>de la fuerza laboral de Ecuador tiene empleo adecuado. Casi dos de cada tres, no.</p><span class="src">INEC · ENEMDU, mayo 2026</span><span class="use">Se usa en el Carrusel 2</span></div>
+      <div class="datum"><div class="v">34,6<small>%</small></div><p>de los jóvenes de 18 a 29 años tiene empleo adecuado. Subió desde 28,0%, pero sigue lejos de la mitad.</p><span class="src">INEC · mayo 2025 vs. mayo 2026</span><span class="use">Se usa en el Carrusel 2 y el Reel 5</span></div>
+      <div class="datum"><div class="v">$12</div><p>es lo que subió el sueldo básico para 2026: de $470 a $482.</p><span class="src">Acuerdo Ministerial MDT-2025-195</span><span class="use">Se usa en el Reel 2 «Doce dólares»</span></div>
+      <div class="datum"><div class="v">€1.221</div><p>es el salario mínimo en España en 2026, en 14 pagas (€17.094 al año). Más del doble, y con un costo de vida también más alto.</p><span class="src">Real Decreto 126/2026 · BOE</span><span class="use">Se usa en el Carrusel 4</span></div>
+      <div class="datum"><div class="v">30 <small>h/sem</small></div><p>puede trabajar quien estudia un grado, máster o doctorado en España desde el 20 de mayo de 2025. Antes eran 20.</p><span class="src">Reglamento de Extranjería · RD 1155/2024</span><span class="use">Se usa en el Reel 5 «30 horas»</span></div>
+      <div class="datum"><div class="v">4.949</div><p>ecuatorianos fueron detenidos en 2025 en la frontera de EE. UU. con México. La ruta irregular tiene un costo que nadie cotiza.</p><span class="src">Diario El Mercurio (Cuenca), 2025</span><span class="use">Se usa en el Reel 7 «Dos caminos»</span></div>
     </div>
     <div class="honest fade"><svg class="chev" style="color:var(--cyan);width:14px;height:20px;margin-top:2px"><use href="#ch"/></svg><div><b>Contexto que juega a favor de la vía legal:</b> en 2025, 13.689 ecuatorianos obtuvieron la nacionalidad española (INE) y el censo español de 2021 registró 416.323 ecuatorianos viviendo allá. Para muchas familias, Europa no es un salto al vacío: ya tienen a alguien allá. Ahí entra NEXORA FAMILY.</div></div>
   </div>
@@ -496,27 +526,27 @@ details.more[open] summary::before{content:"– ";}
       <article class="card fade"><div class="ph-img" style="background-image:url(img/consulta.jpg)"></div><div class="bd">
         <h3>El profesional estancado</h3><div class="svc">NEXORA VISA · NEXORA STUDY</div>
         <blockquote>«Tengo título, tengo trabajo, y hace cuatro años gano casi lo mismo.»</blockquote>
-        <dl><dt>Lo que compra</dt><dd>Salir del «sigo como estoy» sin lanzarse al vacío.</dd><dt>Palanca</dt><dd>Lo que le cuesta quedarse igual, con datos.</dd><dt>Freno</dt><dd>«Ya estoy grande para empezar de cero.»</dd></dl>
+        <dl><dt>Lo que busca</dt><dd>Salir del «sigo como estoy» sin lanzarse al vacío.</dd><dt>Qué lo mueve</dt><dd>Lo que le cuesta quedarse igual, con datos.</dd><dt>Lo que lo frena</dt><dd>«Ya estoy grande para empezar de cero.»</dd></dl>
       </div></article>
       <article class="card fade"><div class="ph-img" style="background-image:url(img/estudiante.jpg)"></div><div class="bd">
         <h3>El recién graduado con hambre</h3><div class="svc">NEXORA STUDY</div>
         <blockquote>«La mitad de mi promoción ya se fue. Yo sigo mandando hojas de vida.»</blockquote>
-        <dl><dt>Lo que compra</dt><dd>Acceso: un máster en Europa y la posibilidad de trabajar mientras estudia.</dd><dt>Palanca</dt><dd>Información que sus amigos no tienen (las 30 horas).</dd><dt>Freno</dt><dd>«No me alcanza la plata.»</dd></dl>
+        <dl><dt>Lo que busca</dt><dd>Acceso: un máster en Europa y la posibilidad de trabajar mientras estudia.</dd><dt>Qué lo mueve</dt><dd>Información que sus amigos no tienen (las 30 horas).</dd><dt>Lo que lo frena</dt><dd>«No me alcanza la plata.»</dd></dl>
       </div></article>
       <article class="card fade"><div class="ph-img" style="background-image:url(img/familia.jpg);background-position:center 25%"></div><div class="bd">
         <h3>La familia partida en dos</h3><div class="svc">NEXORA FAMILY</div>
         <blockquote>«Mi esposo está en Murcia desde hace tres años. Los niños lo ven por videollamada.»</blockquote>
-        <dl><dt>Lo que compra</dt><dd>Tranquilidad: que la familia se junte por la vía correcta.</dd><dt>Palanca</dt><dd>El tiempo que ya llevan separados.</dd><dt>Freno</dt><dd>«Los papeles son un laberinto.»</dd></dl>
+        <dl><dt>Lo que busca</dt><dd>Tranquilidad: que la familia se junte por la vía correcta.</dd><dt>Qué lo mueve</dt><dd>El tiempo que ya llevan separados.</dd><dt>Lo que lo frena</dt><dd>«Los papeles son un laberinto.»</dd></dl>
       </div></article>
       <article class="card fade"><div class="ph-img" style="background-image:url(img/relocation.jpg)"></div><div class="bd">
         <h3>El que ya decidió y no sabe por dónde empezar</h3><div class="svc">NEXORA RELOCATION · NEXORA DOCUMENTS</div>
         <blockquote>«Ya tengo la admisión. ¿Y ahora qué? ¿Qué es el NIE?»</blockquote>
-        <dl><dt>Lo que compra</dt><dd>Dirección: una lista clara de pasos en orden.</dd><dt>Palanca</dt><dd>El miedo a llegar y quedarse trabado en un trámite.</dd><dt>Freno</dt><dd>«Lo puedo hacer solo con YouTube.»</dd></dl>
+        <dl><dt>Lo que busca</dt><dd>Dirección: una lista clara de pasos en orden.</dd><dt>Qué lo mueve</dt><dd>El miedo a llegar y quedarse trabado en un trámite.</dd><dt>Lo que lo frena</dt><dd>«Lo puedo hacer solo con YouTube.»</dd></dl>
       </div></article>
       <article class="card fade"><div class="ph-img" style="background-image:url(img/asesora.jpg);background-position:center 20%"></div><div class="bd">
         <h3>El escéptico que conoce historias de estafas</h3><div class="svc">Transversal · todas las fases</div>
         <blockquote>«A mi primo le cobraron $3.000 por una cita que nunca existió.»</blockquote>
-        <dl><dt>Lo que compra</dt><dd>Certeza: saber con quién habla y qué recibe por escrito.</dd><dt>Palanca</dt><dd>Prueba, transparencia y personas con nombre y rostro.</dd><dt>Freno</dt><dd>«Todos dicen lo mismo y después desaparecen.»</dd></dl>
+        <dl><dt>Lo que busca</dt><dd>Certeza: saber con quién habla y qué recibe por escrito.</dd><dt>Qué lo mueve</dt><dd>Prueba, transparencia y personas con nombre y rostro.</dd><dt>Lo que lo frena</dt><dd>«Todos dicen lo mismo y después desaparecen.»</dd></dl>
       </div></article>
       <article class="card fade"><div class="bd" style="background:var(--navy);color:#fff;justify-content:center">
         <h3 style="color:#fff">Dónde están</h3><div class="svc" style="color:var(--cyan)">Segmentación inicial</div>
@@ -533,7 +563,7 @@ details.more[open] summary::before{content:"– ";}
     <div class="sec-head fade">
       <div class="kicker">El recorrido de la persona</div>
       <h2><svg class="chev"><use href="#ch"/></svg>De no saberlo a escribirnos</h2>
-      <p>Cada fase sube un nivel de conciencia. Si una pieza intenta saltarse dos niveles, la sacamos.</p>
+      <p>Cada fase lleva a la persona un paso más cerca de escribirnos. Ninguna pieza le pide algo para lo que todavía no está lista.</p>
     </div>
     <div class="route fade">
       <div class="step"><div class="dot">1</div><h4>Expectativa</h4><div class="aw">No lo sabe → siente el problema</div><p>Reconoce su techo. Todavía no busca soluciones.</p></div>
@@ -542,6 +572,24 @@ details.more[open] summary::before{content:"– ";}
       <div class="step"><div class="dot">4</div><h4>Acción</h4><div class="aw">Confía → escribe RUTA</div><p>Da un paso pequeño y concreto: la evaluación inicial.</p></div>
     </div>
     <div class="rhythm fade" id="rhythm"></div>
+  </div>
+</section>
+
+<section class="sec ice" id="como-leer" style="padding:80px 0">
+  <div class="wrap">
+    <div class="sec-head fade" style="margin-bottom:32px">
+      <div class="kicker">Antes de ver las fases</div>
+      <h2><svg class="chev"><use href="#ch"/></svg>Cómo leer cada pieza</h2>
+      <p>Cada reel y cada carrusel empieza con dos líneas en simple: de qué trata y por qué lo hacemos. Debajo está el detalle para el equipo que lo va a grabar o diseñar.</p>
+    </div>
+    <div class="legend fade">
+      <div><b>La idea</b>Qué es el video o el carrusel, contado en una frase.</div>
+      <div><b>Por qué funciona</b>Para qué sirve dentro de la campaña.</div>
+      <div><b>Guion por escenas</b>Cada escena dice qué se ve, qué se dice palabra por palabra y qué texto aparece en pantalla. La primera escena es el gancho: lo que hace que la gente no pase de largo.</div>
+      <div><b>Frase de honestidad</b>Una línea que le pone un límite a lo que prometemos («pero no te podemos garantizar…»). Hace que nos crean.</div>
+      <div><b>Texto completo para leer</b>Todo lo que se dice en el video, de corrido, listo para leerlo en cámara o en el teleprompter.</div>
+      <div><b>Llamada a la acción</b>La última escena: lo único que le pedimos a la persona. Los carruseles traen además el texto completo del post.</div>
+    </div>
   </div>
 </section>
 
@@ -569,10 +617,10 @@ details.more[open] summary::before{content:"– ";}
       <p>Una cuenta nueva no tiene a quién generarle expectativa. La pauta empuja los teasers a la gente correcta y luego persigue a quien ya mostró interés. Proponemos el reparto; el monto lo definimos con NEXORA.</p>
     </div>
     <div class="paid fade">
-      <div><b>30%</b><h5>Expectativa</h5><p>Objetivo de reproducciones (ThruPlay) en las ciudades y provincias núcleo. Construye el público que vio el 50% o más de los teasers.</p></div>
-      <div><b>30%</b><h5>Atención</h5><p>Interacción y seguidores con los reels A2, A3 y A4. Los carruseles que más se guarden se convierten en anuncio.</p></div>
-      <div><b>20%</b><h5>Convencimiento</h5><p>Retargeting: solo a quien vio, guardó o comentó. Reels C1 y C2 y el carrusel de estafas.</p></div>
-      <div><b>20%</b><h5>Acción</h5><p>Anuncios de mensajes (Instagram Direct y WhatsApp) con la palabra RUTA. Se mide en costo por evaluación agendada.</p></div>
+      <div><b>30%</b><h5>Expectativa</h5><p>Anuncios para que la gente de las ciudades y provincias elegidas vea los videos de adelanto. Guardamos la lista de quienes vieron al menos la mitad para mostrarles lo que sigue.</p></div>
+      <div><b>30%</b><h5>Atención</h5><p>Anuncios para ganar seguidores y comentarios con los Reels 5, 6 y 7. El carrusel que más se guarde también se promociona.</p></div>
+      <div><b>20%</b><h5>Convencimiento</h5><p>Anuncios solo para quienes ya vieron, guardaron o comentaron algo nuestro: Reels 8 y 9 y el carrusel de estafas.</p></div>
+      <div><b>20%</b><h5>Acción</h5><p>Anuncios que abren un chat de Instagram o WhatsApp con la palabra RUTA. Medimos cuánto cuesta cada evaluación agendada.</p></div>
     </div>
   </div>
 </section>
@@ -610,22 +658,22 @@ details.more[open] summary::before{content:"– ";}
       <table class="tbl">
         <thead><tr><th>Fase</th><th>Métrica principal</th><th>Métricas de apoyo</th><th>Señal para pasar a la siguiente</th></tr></thead>
         <tbody>
-          <tr><td data-h="Fase">1 · Expectativa</td><td data-h="Métrica principal">Retención al 50% de los teasers</td><td data-h="Métricas de apoyo">Reproducciones de 3 s, comentarios en E1 y E2, respuestas a la caja «¿Qué te frena?»</td><td data-h="Señal">Tenemos al menos 20 objeciones reales para escribir la Fase 3</td></tr>
-          <tr><td data-h="Fase">2 · Atención</td><td data-h="Métrica principal">Compartidos y seguidores nuevos</td><td data-h="Métricas de apoyo">Guardados, visitas al perfil, comentarios con palabra clave (ESTUDIAR, RUTA, CUENTA)</td><td data-h="Señal">Los carruseles de utilidad superan en guardados al promedio de la cuenta</td></tr>
-          <tr><td data-h="Fase">3 · Convencimiento</td><td data-h="Métrica principal">Conversaciones iniciadas por mensaje directo</td><td data-h="Métricas de apoyo">Respuestas a historias, asistencia al live, guardados del checklist</td><td data-h="Señal">Las preguntas por DM pasan de «¿qué hacen?» a «¿cómo empiezo?»</td></tr>
-          <tr><td data-h="Fase">4 · Acción</td><td data-h="Métrica principal">Evaluaciones agendadas</td><td data-h="Métricas de apoyo">Asistencia a la evaluación, contratos firmados, costo por evaluación</td><td data-h="Señal">La agenda semanal se llena; se pasa a modo permanente</td></tr>
+          <tr><td data-h="Fase">1 · Expectativa</td><td data-h="Métrica principal">Cuánta gente ve al menos la mitad de los videos de adelanto</td><td data-h="Métricas de apoyo">Cuánta gente se detiene a verlos, comentarios en los Reels 2 y 3, respuestas a la pregunta «¿Qué te frena?» en historias</td><td data-h="Señal">Tenemos al menos 20 objeciones reales para escribir la Fase 3</td></tr>
+          <tr><td data-h="Fase">2 · Atención</td><td data-h="Métrica principal">Compartidos y seguidores nuevos</td><td data-h="Métricas de apoyo">Guardados, visitas al perfil, comentarios con las palabras ESTUDIAR, RUTA o CUENTA</td><td data-h="Señal">Los carruseles con información práctica se guardan más que el resto</td></tr>
+          <tr><td data-h="Fase">3 · Convencimiento</td><td data-h="Métrica principal">Personas que nos escriben por mensaje</td><td data-h="Métricas de apoyo">Respuestas a historias, asistencia al live, guardados del checklist</td><td data-h="Señal">Las preguntas por DM pasan de «¿qué hacen?» a «¿cómo empiezo?»</td></tr>
+          <tr><td data-h="Fase">4 · Acción</td><td data-h="Métrica principal">Evaluaciones agendadas</td><td data-h="Métricas de apoyo">Asistencia a la evaluación, contratos firmados, costo por evaluación</td><td data-h="Señal">La agenda de la semana se llena; la campaña queda funcionando de forma permanente</td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="subhead" style="margin-top:80px"><svg class="chev"><use href="#ch"/></svg>Método Fórmula 100K aplicado</div>
     <div class="method fade">
-      <div><h5><svg class="chev"><use href="#ch"/></svg>Posicionamiento primero</h5><p>Ángulo, beneficio central y voz definidos antes de escribir cualquier pieza.</p></div>
-      <div><h5><svg class="chev"><use href="#ch"/></svg>Perfiles de compra</h5><p>Cada pieza apunta a un perfil y a su freno: estancado, ambicioso, familia, perdido, escéptico.</p></div>
-      <div><h5><svg class="chev"><use href="#ch"/></svg>Estructura y pilar por pieza</h5><p>Cada reel declara su estructura (Espejo, Versus, Gancho controversial…) y su pilar de valor.</p></div>
-      <div><h5><svg class="chev"><use href="#ch"/></svg>Gancho en tres capas</h5><p>Lo que se dice, lo que se ve y lo que se lee en los primeros 3 segundos, coherentes entre sí.</p></div>
-      <div><h5><svg class="chev"><use href="#ch"/></svg>El «pero» que da credibilidad</h5><p>Justo después del gancho, una línea que le resta a la propia promesa. En este rubro vale oro.</p></div>
-      <div><h5><svg class="chev"><use href="#ch"/></svg>Pase de reescritura</h5><p>Frases cortas, verbos que se pueden grabar, cero muletillas de vendedor y cifras exactas.</p></div>
+      <div><h5><svg class="chev"><use href="#ch"/></svg>Posicionamiento primero</h5><p>Primero definimos la idea central, a quién le hablamos y cómo suena la marca. Después escribimos.</p></div>
+      <div><h5><svg class="chev"><use href="#ch"/></svg>Un público por pieza</h5><p>Cada pieza le habla a uno de los cinco perfiles y a lo que lo frena.</p></div>
+      <div><h5><svg class="chev"><use href="#ch"/></svg>Moldes probados</h5><p>Cada reel usa un molde de guion de Fórmula 100K que ya ha funcionado en otras cuentas (aparece en la ficha técnica).</p></div>
+      <div><h5><svg class="chev"><use href="#ch"/></svg>Los primeros 3 segundos</h5><p>Lo que se dice, lo que se ve y lo que se lee al inicio cuentan lo mismo, para que nadie pase de largo.</p></div>
+      <div><h5><svg class="chev"><use href="#ch"/></svg>Frase de honestidad</h5><p>Justo después del inicio, una línea que pone un límite a lo que prometemos. En este rubro es lo que más confianza da.</p></div>
+      <div><h5><svg class="chev"><use href="#ch"/></svg>Texto revisado</h5><p>Frases cortas, cosas que se pueden mostrar en cámara, cifras exactas y nada de frases de vendedor.</p></div>
     </div>
   </div>
 </section>
@@ -688,7 +736,7 @@ const PH=[
  id:'fase-1', n:'01', name:'Expectativa', theme:'', days:'Días 1 – 10',
  big:'Algo no <em>cuadra.</em>',
  lead:'Diez días para instalar una pregunta incómoda sin vender nada. La cuenta se ve como NEXORA, pero las piezas no hablan de servicios: hablan de la persona, de su año repetido y de una puerta que no abre.',
- facts:[['Objetivo','Que la persona se reconozca y quiera saber qué viene el día 11.'],['Conciencia','No sabe que tiene un problema → lo siente.',1],['Emoción','Incomodidad que se vuelve curiosidad.'],['No hacemos','Nombrar servicios, precios ni «escríbenos».'],['Extra','Los comentarios de esta fase son la materia prima de la Fase 3.']],
+ facts:[['Objetivo','Que la persona se reconozca y quiera saber qué viene el día 11.'],['En qué punto está','No ha pensado en irse → empieza a sentir que está estancado.',1],['Emoción','Incomodidad que se vuelve curiosidad.'],['No hacemos','Nombrar servicios, precios ni «escríbenos».'],['Extra','Lo que la gente comente aquí lo respondemos en videos de la Fase 3.']],
  reels:[
   {id:'E1',t:'Doce dólares',img:'consulta.jpg',dur:'30–35 s',fmt:'Hablando a cámara + B-roll',est:'13 · El Espejo',pil:'Validación emocional',per:'Profesional estancado',gat:'Identificación',
    ht:'El básico subió <mark>$12</mark>.<br>¿Y tú?',
@@ -700,41 +748,41 @@ const PH=[
    nota:'Fuente en el texto del post: Acuerdo MDT-2025-195 ($470 → $482).'},
   {id:'E2',t:'¿Qué te frena?',img:'relocation.jpg',dur:'40–45 s',fmt:'Entrevistas en la calle',est:'30 · Máquina de comentarios',pil:'Validación emocional',per:'Todos los perfiles',gat:'Curiosidad',
    ht:'Le preguntamos a 30 personas en Quito:<br><mark>¿te irías a Europa?</mark>',
-   vis:'Un micrófono con el chevron cian frente a gente en La Carolina; luego en el Malecón 2000 y en el centro de Cuenca.',
+   vis:'Un micrófono con la marca frente a gente en el parque La Carolina; luego en el Malecón 2000 y en el centro de Cuenca.',
    ver:'«Si mañana pudieras irte a Europa con papeles, ¿te irías?»',
-   pr:'N/A en formato calle: la credibilidad la ponen las respuestas reales.',
-   sc:[['0–3 s','Si mañana pudieras irte a Europa con papeles, ¿te irías?'],['3–15 s','Cinco respuestas rápidas, alternando «sí, de una» y «no sé».'],['15–35 s','Segunda pregunta: «¿Y qué te frena?» La plata. Los papeles. Que me estafen. Mis hijos. No sé por dónde empezar.'],['35–42 s','Pantalla azul: «Casi todos dijeron que sí. Casi nadie sabía por dónde empezar.»']],
+   pr:'N/A',
+   sc:[['0–3 s','Si mañana pudieras irte a Europa con papeles, ¿te irías?'],['3–15 s','Cinco respuestas rápidas, alternando «sí, de una» y «no sé».'],['15–35 s','Segunda pregunta: «¿Y qué te frena?» La plata. Los papeles. Que me estafen. Mis hijos. No sé por dónde empezar.'],['35–42 s','Cierre en pantalla azul con el texto: «Casi todos dijeron que sí. Casi nadie sabía por dónde empezar.»']],
    cta:'«¿Y a ti qué te frena? Te leemos en comentarios.»',
    nota:'Respuestas reales, sin libreto, con cesión de imagen firmada. Las objeciones que salgan aquí guían los reels de la Fase 3.'},
   {id:'E3',t:'La puerta',img:'documentos.jpg',dur:'10–12 s',fmt:'Visual sin voz, música con tensión',est:'18 · El Momento WTF (versión corta)',pil:'Validación emocional',per:'Profesional estancado',gat:'Sorpresa',
    ht:'Año 1.<br>Año 2.<br><mark>Año 3…</mark>',
    vis:'Alguien empuja una puerta pesada de oficina que no abre. La cámara gira: a su espalda hay otra puerta abierta, con luz fría y una montaña nevada al fondo.',
    ver:'Sin voz. Solo el golpe de la puerta y la respiración.',
-   pr:'N/A en un teaser visual.',
-   sc:[['0–6 s','Tres empujones; el texto cambia con cada uno: Año 1, Año 2, Año 3.'],['6–9 s','Giro de cámara hacia la puerta abierta y la montaña.'],['9–12 s','Aparece el chevron cian sobre fondo azul: «Día 11.»']],
-   cta:'Ninguna. El misterio es la llamada a la acción.',
+   pr:'N/A',
+   sc:[['0–6 s','Tres empujones; el texto cambia con cada uno: Año 1, Año 2, Año 3.'],['6–9 s','Giro de cámara hacia la puerta abierta y la montaña.'],['9–12 s','Pantalla azul con la flecha de la marca y el texto «Día 11», el día en que NEXORA se presenta.']],
+   cta:'No pedimos nada: la intriga hace el trabajo.',
    nota:'Es la primera pieza de la cuenta. Se usa también como anuncio de alcance.'}
  ],
  caros:[
   {id:'C-E1',t:'Test: ¿llegaste a tu techo?',fmt:'Checklist',pil:'Desafío',per:'Estancado · ambicioso',
    sl:['¿Llegaste a tu techo?<br>Marca las que te pasan.','☐ Llevas más de 2 años en el mismo cargo.','☐ Tu sueldo sube al ritmo del básico.','☐ Trabajas en algo que no estudiaste.','☐ La mitad de tu promoción ya vive afuera.','☐ Buscaste «cómo irme a Europa» pasadas las 11 de la noche.','☐ Te frena más el miedo a una estafa que la plata.','¿4 o más?<br>Lo que publicamos el día 11 es para ti.'],
-   cap:'<b>Texto:</b> «No es para sentirte mal. Es para ponerle nombre a algo.» <b>CTA:</b> comenta tu número.'},
+   cap:'<b>Texto del post:</b> «No es para sentirte mal. Es para ponerle nombre a algo.» <b>Al final:</b> pedimos que comenten cuántas marcaron.'},
   {id:'C-E2',t:'Tres cifras que nadie te pone juntas',fmt:'Datos uno por lámina',pil:'Actualidad',per:'Escéptico',
    sl:['Tres cifras de 2026 que nadie te pone juntas.','<b>36,6</b> de cada 100 personas en la fuerza laboral tienen empleo adecuado.<small>INEC, mayo 2026</small>','Entre los 18 y los 29 años: <b>34,6</b>.<small>INEC, mayo 2026</small>','El sueldo básico 2026: <b>$482</b>. Subió $12.<small>MDT-2025-195</small>','No te lo mostramos para que te deprimas.','El día 11 te mostramos otras cifras.<br>Las del otro lado.'],
-   cap:'<b>CTA:</b> «¿Cuál de las tres te pegó más?» Fuentes completas en el texto del post.'}
+   cap:'<b>Al final:</b> preguntamos «¿Cuál de las tres te pegó más?». Las fuentes van en el texto del post.'}
  ],
- stories:['Encuesta: «Si supieras cómo hacerlo en regla, ¿te irías a Europa?» Sí / Ya lo estoy pensando.','Caja de preguntas: «¿Qué te frena?»','Cuenta regresiva al día 11 con el chevron cian.','Repost anónimo de los comentarios más fuertes de E1 y E2.'],
- kpi:['Retención al 50% de E1 y E3.','Comentarios en E2 y en el test (materia prima de la Fase 3).','Respuestas a la caja «¿Qué te frena?».','Personas que activan el recordatorio de la cuenta regresiva.']
+ stories:['Encuesta: «Si supieras cómo hacerlo en regla, ¿te irías a Europa?» Sí / Ya lo estoy pensando.','Caja de preguntas: «¿Qué te frena?»','Cuenta regresiva al día 11, el día en que NEXORA se presenta.','Repost anónimo de los comentarios más fuertes de los Reels 2 y 3.'],
+ kpi:['Cuánta gente ve al menos la mitad de los Reels 1 y 2.','Comentarios en el Reel 3 y en el test (con ellos escribimos la Fase 3).','Respuestas a la caja «¿Qué te frena?».','Personas que activan el recordatorio de la cuenta regresiva.']
 },
 {
  id:'fase-2', n:'02', name:'Atención', theme:'navy', days:'Días 11 – 24',
  big:'Hay otro camino.<br><em>Y tiene papeles.</em>',
  lead:'El día 11 NEXORA da la cara. Durante dos semanas, cada pieza deja algo útil: una norma que pocos conocen, un mito desarmado, una comparación honesta. El 80% enseña; el 20% presenta a la marca.',
- facts:[['Objetivo','Revelar NEXORA y dejar instalada la idea de que existen rutas en regla.'],['Conciencia','Siente el problema → conoce la salida.',2],['Emoción','Alivio y curiosidad práctica.'],['No hacemos','Pedir la evaluación todavía.'],['Palabras clave','ESTUDIAR · CUENTA · RUTA (respuesta automática por DM).']],
+ facts:[['Objetivo','Revelar NEXORA y dejar instalada la idea de que existen rutas en regla.'],['En qué punto está','Se siente estancado → descubre que hay rutas legales.',2],['Emoción','Alivio y curiosidad práctica.'],['No hacemos','Pedir la evaluación todavía.'],['Palabras para comentar','ESTUDIAR · CUENTA · RUTA. Quien comenta una de ellas recibe información automática por mensaje.']],
  reels:[
   {id:'A1',t:'Día 11: te debíamos una respuesta',img:'asesora.jpg',dur:'40 s',fmt:'Vocero a cámara + gráficos',est:'35 · Manifiesto de serie',pil:'Disrupción',per:'Escéptico',gat:'Sorpresa',
    ht:'Te debíamos<br>una <mark>respuesta.</mark>',
-   vis:'El chevron cian que cerró los teasers se abre y forma la X del logo de NEXORA.',
+   vis:'La flecha celeste que cerraba los videos de adelanto se abre y forma la X del logo de NEXORA.',
    ver:'«Diez días hablándote del techo. Hoy te decimos quiénes somos y qué no vamos a hacer.»',
    pr:'«Pero primero, lo que no hacemos: no vendemos visas. Nadie puede venderte una.»',
    sob:[['Prueba','Somos NEXORA GROUP, una firma con base en Suiza que acompaña proyectos de visado, estudios, familia y llegada a Europa.'],['Promesa','No vas a volver a pagarle a nadie sin saber antes si tu caso tiene camino.'],['Filtro','Si buscas a alguien que te diga «sí o sí», no somos nosotros.']],
@@ -759,7 +807,7 @@ const PH=[
    ht:'Los dos salieron de Cuenca<br><mark>el mismo mes.</mark>',
    vis:'Pantalla partida: a la izquierda, botas embarradas y una mochila; a la derecha, una carpeta azul con documentos.',
    ver:'«Los dos salieron de Cuenca el mismo mes. Él le pagó a alguien que le prometió que llegaba. Ella pasó tres meses armando una carpeta.»',
-   pr:'N/A en narrativa: el dato de la frontera hace de ancla.',
+   pr:'N/A',
    sc:[['5–15 s','Izquierda: selva, deuda, frontera. Derecha: matrícula, visado, NIE.'],['15–22 s','Dato en pantalla: en 2025, 4.949 ecuatorianos fueron detenidos en la frontera de EE. UU. con México.'],['22–30 s','«Él todavía no sabe si se puede quedar. Ella ya sabe hasta en qué barrio vive. Los dos tenían las mismas ganas.»']],
    cta:'«Envíaselo a alguien que lo esté pensando.»',
    nota:'Línea roja: el contraste va contra el riesgo, nunca contra la persona que migró.'}
@@ -767,22 +815,22 @@ const PH=[
  caros:[
   {id:'C-A1',t:'$482 contra €1.221',fmt:'Antes y después, honesto',pil:'Revelación',per:'Estancado · escéptico',
    sl:['$482 contra €1.221.<br>Antes de emocionarte, lee hasta el final.','Ecuador 2026: sueldo básico <b>$482</b> al mes.','España 2026: salario mínimo <b>€1.221</b> al mes, en 14 pagas. €17.094 al año.','Sí: es más del doble.','Pero en España el arriendo, el transporte y la comida también cuestan más. En Madrid o Barcelona, bastante más.','La pregunta útil no es «¿cuánto gano?».<br>Es «¿cuánto me queda?».','Esa cuenta depende de la ciudad, la ruta y tu familia. Comenta CUENTA y te mandamos la plantilla.'],
-   cap:'El «pero» de la lámina 5 es lo que vuelve creíble a la marca. <b>CTA:</b> palabra clave CUENTA.'},
+   cap:'La lámina 5 (la advertencia del costo de vida) es la que vuelve creíble a la marca. <b>Al final:</b> quien comenta CUENTA recibe una plantilla para calcular sus gastos.'},
   {id:'C-A2',t:'5 rutas en regla hacia Europa',fmt:'Curaduría por servicio',pil:'Curaduría',per:'El que no sabe por dónde empezar',
    sl:['5 rutas en regla hacia Europa.<br>¿Cuál es la tuya?','<b>VISA</b><br>Tienes un motivo concreto para viajar y necesitas el visado correcto.','<b>STUDY</b><br>Quieres hacer un grado, un máster o una FP.','<b>FAMILY</b><br>Tu familia ya vive allá, o quieres llevar a la tuya.','<b>RELOCATION</b><br>Ya tienes el visado y te falta organizar la llegada.','<b>DOCUMENTS</b><br>Te falta el NIE, una carta de invitación u ordenar tus papeles.','¿No sabes cuál es la tuya? Por eso empezamos escuchando tu caso.'],
-   cap:'Usa las fotos del brochure en cada lámina de servicio. <b>CTA:</b> comenta RUTA.'},
+   cap:'Cada lámina de servicio lleva su foto del brochure. <b>Al final:</b> pedimos que comenten RUTA.'},
   {id:'C-A3',t:'8 palabras que vas a escuchar si te vas a España',fmt:'Glosario',pil:'Utilidad práctica',per:'Recién graduado · el que ya decidió',
    sl:['8 palabras que vas a escuchar si te vas a España.','<b>NIE</b><br>Número de Identidad de Extranjero: lo piden en casi cualquier trámite.','<b>Apostilla</b><br>El sello que hace válido tu documento ecuatoriano en otro país.','<b>Homologación</b><br>El trámite para que tu título valga allá.','<b>Reagrupación familiar</b><br>La vía para que tu familia viva contigo legalmente.','<b>Empadronamiento</b><br>Registrarte en el municipio donde vives.','<b>TIE</b><br>La tarjeta física que demuestra tu residencia.','<b>Visado de estudios</b><br>Para entrar a estudiar. Desde 2025, con hasta 30 h de trabajo.','¿Cuál no conocías? Comenta la palabra.'],
-   cap:'Pieza de guardado. Términos técnicos usados y traducidos en la misma línea.'}
+   cap:'Pensado para que la gente lo guarde: cada palabra técnica va explicada en la misma lámina.'}
  ],
  stories:['Detrás de cámara del equipo preparando el día 11.','Quiz: «¿Qué es el NIE?» con tres opciones.','Sticker «Pregúntale a NEXORA» y respuestas en video corto del vocero.','Recordatorio de las palabras clave activas.'],
- kpi:['Compartidos de A4 y del carrusel de rutas.','Seguidores nuevos y visitas al perfil.','Guardados del glosario y de la comparación salarial.','Comentarios con ESTUDIAR, CUENTA y RUTA.']
+ kpi:['Compartidos del Reel 7 y del carrusel de rutas.','Seguidores nuevos y visitas al perfil.','Guardados del glosario y de la comparación salarial.','Comentarios con ESTUDIAR, CUENTA y RUTA.']
 },
 {
  id:'fase-3', n:'03', name:'Convencimiento', theme:'', days:'Días 25 – 38',
  big:'Así <em>trabajamos.</em>',
  lead:'Ya saben que hay un camino. Ahora necesitan confiar en quien los acompaña. Mostramos el método, las caras, los límites y casos reales. Cada pieza responde una objeción que la gente escribió en las fases anteriores.',
- facts:[['Objetivo','Pasar de «me interesa» a «confío en ellos».'],['Conciencia','Conoce la salida → confía en NEXORA.',3],['Emoción','Confianza y sensación de orden.'],['Regla','Cada pieza responde una objeción real.'],['Momento fuerte','Live con el vocero: «Estudiar en España en 2027».']],
+ facts:[['Objetivo','Pasar de «me interesa» a «confío en ellos».'],['En qué punto está','Sabe que hay salida → empieza a confiar en NEXORA.',3],['Emoción','Confianza y sensación de orden.'],['Regla','Cada pieza responde una objeción real.'],['Momento fuerte','Live con el vocero: «Estudiar en España en 2027».']],
  reels:[
   {id:'C1',t:'No te podemos garantizar la visa',img:'asesora.jpg',dur:'40 s',fmt:'Vocero a cámara, plano fijo',est:'10 · Gancho controversial',pil:'Disrupción',per:'Escéptico',gat:'Sorpresa',
    ht:'Ninguna agencia debería decirte esto.<br><mark>Nosotros sí.</mark>',
@@ -824,7 +872,7 @@ const PH=[
  caros:[
   {id:'C-C1',t:'7 señales de que te quieren estafar con un trámite',fmt:'Lista de alerta',pil:'Utilidad práctica',per:'Escéptico · familia',
    sl:['7 señales de que te quieren estafar con un trámite para Europa.','Te <b>garantizan</b> la aprobación.','Te cotizan sin preguntar nada de tu caso.','Te piden pagar a una cuenta personal, sin contrato ni factura.','Te venden una «cita» o un «cupo» en el consulado.','Te sugieren mentir o inflar datos en el formulario.','No puedes verificar quiénes son: sin dirección, sin web, sin nombres.','Te presionan con «solo hoy».','Envíaselo a quien esté pensando en irse.'],
-   cap:'La pieza con más potencial de compartidos. NEXORA cumple las siete al revés, y eso se nota sin decirlo.'},
+   cap:'Es la pieza que más se va a compartir. NEXORA hace justo lo contrario de las siete señales, y se nota sin decirlo.'},
   {id:'C-C2',t:'Qué pasa después de que nos escribes',fmt:'Proceso en 4 pasos',pil:'Utilidad práctica',per:'Todos',
    sl:['Qué pasa después de que nos escribes.','<b>1 · Conocemos tu caso</b><br>Escuchamos y analizamos tu situación.','<b>2 · Definimos el servicio</b><br>Qué acompañamiento aplica y qué pasos siguen.','<b>3 · Organizamos el proceso</b><br>Documentos y etapas del trámite.','<b>4 · Te acompañamos</b><br>Seguimiento personal, dentro del alcance contratado.','Y algo que decimos desde el primer mensaje: ningún servicio implica garantía de aprobación.','Escribe RUTA para empezar por el paso 1.'],
    cap:'Los cuatro pasos son los del brochure, con la misma iconografía de números.'},
@@ -839,7 +887,7 @@ const PH=[
  id:'fase-4', n:'04', name:'Acción', theme:'navy', days:'Días 39 – 52 y luego permanente',
  big:'Tu próximo paso<br><em>comienza aquí.</em>',
  lead:'Una sola acción en toda la fase: escribir RUTA. Llega un mensaje con las seis preguntas, la persona las responde cuando puede y elige el día de su evaluación inicial. La urgencia sale de cupos y fechas que existen.',
- facts:[['Objetivo','Convertir la confianza en evaluaciones agendadas.'],['Conciencia','Confía en NEXORA → actúa.',4],['Oferta','Evaluación inicial de tu proyecto (formato y cupos los define NEXORA).'],['Mecánica','RUTA por comentario o DM → 6 preguntas → agenda por WhatsApp.'],['Regla','Urgencia solo con fechas reales.']],
+ facts:[['Objetivo','Convertir la confianza en evaluaciones agendadas.'],['En qué punto está','Confía en NEXORA → nos escribe.',4],['Oferta','Evaluación inicial de tu proyecto (formato y cupos los define NEXORA).'],['Cómo funciona','La persona escribe RUTA → le llegan 6 preguntas → elige día por WhatsApp.'],['Regla','Urgencia solo con fechas reales.']],
  reels:[
   {id:'AC1',t:'Guardar videos no arma un expediente',img:'consulta.jpg',dur:'45 s',fmt:'Vocero a cámara + B-roll de marca',est:'2 · Pitch de venta perfecto',pil:'Utilidad práctica',per:'El indeciso',gat:'Promesa de resultado',
    ht:'Si llevas semanas pensándolo,<br><mark>esto es lo que sigue.</mark>',
@@ -864,7 +912,7 @@ const PH=[
    cta:'«Escribe ESTUDIAR y armamos tu calendario.»',nota:'Plazos exactos por universidad y consulado: los confirma NEXORA antes de grabar.'},
   {id:'AC4',t:'«Lo voy a pensar»',img:'visado.jpg',dur:'30 s',fmt:'Vocero a cámara, tono íntimo',est:'13 · El Espejo (cierre de campaña)',pil:'Validación emocional',per:'Estancado en su plan B',gat:'Identificación',
    ht:'«Lo voy a pensar.»<br><mark>¿Cuántas veces lo has dicho?</mark>',
-   vis:'La misma puerta de E3. Esta vez la persona se da la vuelta y camina hacia la que está abierta.',
+   vis:'La misma puerta del Reel 1. Esta vez la persona se da la vuelta y camina hacia la que está abierta.',
    ver:'«“Lo voy a pensar.” Lo dijiste el año pasado. Y el anterior.»',
    pr:'«Pero esta vez no te pedimos que decidas irte. Te pedimos una conversación.»',
    sc:[['6–22 s','Sales de esa conversación con una respuesta: tu proyecto tiene una ruta, o todavía no. Las dos te sirven.'],['22–30 s','El techo no eras tú. Pero el próximo paso sí te toca a ti.']],
@@ -876,29 +924,222 @@ const PH=[
    cap:'Formato y precio de la evaluación por confirmar con NEXORA.'},
   {id:'C-AC2',t:'¿Cuál es tu próximo paso?',fmt:'Decisión guiada',pil:'Desafío',per:'Indeciso',
    sl:['¿Cuál es tu próximo paso? Responde y llega a tu ruta.','¿Tu familia ya vive en Europa?<br>→ <b>FAMILY</b>','¿Quieres estudiar?<br>→ <b>STUDY</b>','¿Ya tienes el visado?<br>→ <b>RELOCATION</b>','¿Te falta un papel o el NIE?<br>→ <b>DOCUMENTS</b>','¿Otro motivo de viaje?<br>→ <b>VISA</b>','Comenta el nombre de tu ruta y te escribimos.'],
-   cap:'Cada respuesta activa una respuesta automática distinta según la palabra.'}
+   cap:'Según la palabra que comenten (FAMILY, STUDY…), les llega un mensaje automático distinto.'}
  ],
  stories:['Enlace a WhatsApp todos los días.','Cuenta regresiva para el cierre de la agenda semanal (real).','Preguntas frecuentes de la evaluación, una por día.','Mensaje directo a quienes respondieron la caja de la Fase 1.'],
  kpi:['Evaluaciones agendadas por semana.','Asistencia a la evaluación.','Contratos firmados.','Costo por evaluación agendada.']
 }
 ];
 
-const esc=s=>s;
+
+const IDEAS={
+E1:['Una persona habla a cámara del aumento de $12 del sueldo básico y le pregunta a quien mira cuántos años lleva igual. Cierra con la frase de la campaña: «a lo mejor el techo no eras tú».','Usa un dato que todo ecuatoriano conoce para que la persona se sienta identificada, sin venderle nada todavía.'],
+E2:['Salimos a la calle a preguntarle a gente real si se iría a Europa con papeles y qué le frena.','Genera comentarios y nos dice, con palabras reales, qué miedos tenemos que responder más adelante.'],
+E3:['Video corto sin voz: alguien empuja año tras año una puerta que no abre, sin ver que detrás tiene otra abierta. Termina con «Día 11», el día en que NEXORA se presenta.','Es el adelanto misterioso de la campaña. No dice quiénes somos; deja la intriga para el día 11.'],
+A1:['El día 11 presentamos a NEXORA: quiénes somos, qué hacemos y, sobre todo, qué no hacemos (no vendemos visas ni garantizamos aprobaciones).','Empezar por lo que no hacemos nos separa de los tramitadores que prometen todo.'],
+A2:['Explicamos un cambio de ley que poca gente conoce: quien estudia un grado o máster en España ahora puede trabajar hasta 30 horas a la semana.','Es información útil y nueva. La gente la comparte y empieza a vernos como una fuente confiable.'],
+A3:['Desmentimos dos creencias falsas sobre irse a Europa y confirmamos una verdadera: sí se necesita dinero.','Reconocer lo que sí es difícil hace que nos crean en todo lo demás.'],
+A4:['Comparamos a dos personas que salieron de Cuenca el mismo mes: una por la vía irregular y otra con papeles.','Muestra el riesgo de la ruta irregular sin juzgar a nadie y deja clara la alternativa legal.'],
+C1:['El vocero dice de frente que nadie puede garantizar una visa y explica qué sí controla NEXORA: que el expediente esté completo y bien hecho.','En un rubro lleno de estafas, la honestidad es lo que más convence.'],
+C2:['Enseñamos las 6 preguntas que cualquier asesor serio debería hacerte antes de cobrarte algo.','Ayuda a detectar a quien no es serio y, de paso, muestra cómo trabaja NEXORA.'],
+C3:['Respondemos en video las dudas reales que la gente dejó en los comentarios (por ejemplo: «ya estoy muy grande para irme»).','La gente ve que la escuchamos, y cada respuesta quita un miedo.'],
+C4:['Contamos un caso real de una familia que se reunió en España, paso a paso y con los tiempos reales.','Es la prueba de que el proceso funciona. Solo se hace con un caso verdadero y con permiso escrito.'],
+C5:['Presentamos a la persona del equipo que responde los mensajes: nombre, cara y horario.','La gente confía más cuando sabe quién le va a contestar.'],
+AC1:['Invitamos directamente a agendar la evaluación inicial escribiendo la palabra RUTA.','Después de semanas de contenido, la persona ya está lista; solo necesita un paso claro.'],
+AC2:['Grabamos la pantalla del celular para mostrar qué pasa al escribir RUTA: llegan 6 preguntas y se elige el día.','Quita el miedo a escribir: la persona ve que es simple y sin compromiso.'],
+AC3:['Con un calendario mostramos que, para empezar un máster en septiembre de 2027, hay que comenzar los trámites ahora.','Crea urgencia real, basada en fechas verdaderas y no en presión.'],
+AC4:['Cerramos la campaña hablándole a quien siempre dice «lo voy a pensar». Vuelve la puerta del primer video, pero esta vez la persona camina hacia la abierta.','Cierra la historia que abrimos el día 1 y pide algo pequeño: una conversación.'],
+'C-E1':['Una lista de 7 señales de estancamiento para que la persona marque cuántas le pasan.','A la gente le gusta medirse: comenta su número y eso le da alcance a la publicación.'],
+'C-E2':['Tres datos oficiales de empleo y sueldo en Ecuador, uno por lámina.','Pone cifras reales a la sensación de estar estancado.'],
+'C-A1':['Comparamos el sueldo básico de Ecuador con el salario mínimo de España y advertimos que allá también todo cuesta más.','Ser honestos con el costo de vida nos separa de quien vende «el sueño europeo».'],
+'C-A2':['Los 5 servicios de NEXORA explicados según la situación de cada persona.','Cada quien encuentra su caso y sabe por dónde empezar.'],
+'C-A3':['Un mini diccionario con 8 palabras de trámites en España explicadas en simple.','Es útil: la gente lo guarda y lo comparte.'],
+'C-C1':['Una lista de señales para detectar una estafa en trámites migratorios.','Protege a la gente y deja a NEXORA como la opción segura, sin decirlo.'],
+'C-C2':['Los 4 pasos con los que trabaja NEXORA, tal como aparecen en el brochure.','Muestra orden y claridad antes de que la persona nos escriba.'],
+'C-C3':['Los documentos básicos que conviene tener listos antes de la primera conversación.','Prepara a la persona y la acerca a escribirnos.'],
+'C-AC1':['Qué incluye y qué no incluye la evaluación inicial.','Quita dudas y desconfianza justo antes de agendar.'],
+'C-AC2':['Un mini cuestionario que lleva a cada persona al servicio que le corresponde.','Ayuda a decidir a quien todavía no sabe qué necesita.']
+};
+// ===== GUIONES COMPLETOS =====
+// Cada escena: [papel en el guion, tiempo, qué se ve, qué se dice, texto en pantalla]
+const FULL={
+E1:{quien:"Una persona común (no el vocero de NEXORA): 28 a 35 años, ropa de oficina, en su cocina.",musica:"Piano grave y lento; se corta de golpe en la escena 5.",esc:[
+ ["Gancho","segundos 0 a 3","Primer plano de una mano que cuenta billetes de un dólar sobre la mesa de la cocina. Se detiene en el doce y los empuja hacia la cámara.","Este año el sueldo básico subió doce dólares. Doce.","El básico subió $12. ¿Y tú?"],
+ ["Frase de honestidad","segundos 3 a 6","La persona levanta la mirada a la cámara. Plano medio.","Y no, este video no es para decirte que renuncies mañana.",""],
+ ["Desarrollo: la cuenta","segundos 6 a 18","Corte a la persona en el bus de la mañana, mirando por la ventana. Luego en su escritorio, con la misma taza de siempre.","Es para que hagas una cuenta conmigo. ¿Cuántos años llevas en el mismo puesto? Ahora piensa en tus compañeros del colegio. ¿Cuántos ya no viven en el país?","¿Cuántos años en el mismo puesto? / ¿Cuántos amigos ya se fueron?"],
+ ["Giro","segundos 18 a 30","De vuelta en la cocina, plano más cerrado.","Si las dos respuestas te incomodaron, no es por flojo. Madrugas, aguantas el bus, te quedas una hora más cuando te lo piden. Hiciste todo lo que te dijeron que había que hacer.","Hiciste todo lo que te dijeron."],
+ ["Cierre","segundos 30 a 36","Deja los billetes sobre la mesa. Un segundo de silencio.","A lo mejor el techo no eras tú.","El techo no eras tú."],
+ ["Llamada a la acción","segundos 36 a 40","Pantalla azul con la flecha celeste de la marca.","","En 10 días te contamos qué hay del otro lado."]]},
+E2:{quien:"Un entrevistador o entrevistadora joven con micrófono de la marca. Personas reales en Quito, Guayaquil y Cuenca.",musica:"Ritmo urbano suave de fondo; baja cuando hablan los entrevistados.",esc:[
+ ["Gancho","segundos 0 a 3","El entrevistador acerca el micrófono a una joven en el parque La Carolina.","Si mañana pudieras irte a Europa con todos tus papeles en regla, ¿te irías?","Le preguntamos a 30 personas: ¿te irías a Europa?"],
+ ["Primeras respuestas","segundos 3 a 15","Cortes rápidos a cinco personas distintas: edades, ciudades y estilos diferentes (La Carolina, Malecón 2000, centro de Cuenca).","(Respuestas reales. Ejemplos de lo que esperamos oír:) «Sí, de una.» «Mañana mismo.» «No sé… dejaría a mi mamá.» «Sí, pero con papeles, nada de irme por el monte.»","Nombre, edad y ciudad de cada persona."],
+ ["Segunda pregunta","segundos 15 a 35","El entrevistador vuelve con las mismas personas.","¿Y qué te frena? (Ejemplos:) «La plata. ¿Cuánto cuesta eso?» «Los papeles, no entiendo nada.» «Que me estafen; a mi primo le pasó.» «Mis hijos.» «No sé ni por dónde empezar.»","Cada freno se escribe y se queda en pantalla: PLATA · PAPELES · ESTAFA · FAMILIA · NO SÉ POR DÓNDE EMPEZAR"],
+ ["Cierre","segundos 35 a 42","Pantalla azul con la flecha celeste.","(Voz en off) Casi todos dijeron que sí. Casi nadie sabía por dónde empezar.","Casi todos dijeron que sí. Casi nadie sabía por dónde empezar."],
+ ["Llamada a la acción","segundos 42 a 45","Se mantiene la pantalla azul.","¿Y a ti qué te frena?","¿Y a ti qué te frena? Te leemos en comentarios."]]},
+E3:{quien:"Un actor o actriz de 30 a 40 años, camisa formal. No habla.",musica:"Sin música al inicio: solo golpes y respiración. Al girar la cámara entra un viento suave.",esc:[
+ ["Gancho","segundos 0 a 2","Pasillo de oficina gris. La persona empuja con el hombro una puerta pesada que no se mueve. Golpe seco.","(Sin voz)","Año 1."],
+ ["Repetición","segundos 2 a 7","Mismo plano, otra ropa (se nota que pasó el tiempo). Vuelve a empujar. Luego otra vez, más cansada.","(Sin voz. Golpes cada vez más sordos y la respiración.)","Año 2. / Año 3…"],
+ ["Giro","segundos 7 a 11","La cámara gira despacio: detrás de la persona hay otra puerta, abierta, con luz fría y una montaña nevada al fondo (la montaña del logo). La persona no la ha visto.","(Sin voz. El ruido de oficina se apaga.)",""],
+ ["Cierre","segundos 11 a 14","Fundido a pantalla azul con la flecha celeste animada.","(Sin voz. Un solo golpe grave.)","Día 11."]]},
+A1:{quien:"El vocero de NEXORA, sentado, plano medio, fondo de oficina con la marca.",musica:"Música tranquila con pulso; sube en la escena 6.",esc:[
+ ["Gancho","segundos 0 a 3","La flecha celeste de los videos de adelanto se abre y forma la X del logo de NEXORA. Corte al vocero.","Durante diez días te hablamos del techo. Hoy te decimos quiénes somos.","Te debíamos una respuesta."],
+ ["Frase de honestidad","segundos 3 a 7","Vocero a cámara.","Pero antes, lo que no hacemos: no vendemos visas. Nadie puede venderte una.","No vendemos visas."],
+ ["Quiénes somos","segundos 7 a 15","Imágenes de apoyo: la oficina, carpetas azules ordenadas, un mapa de Europa.","Somos NEXORA GROUP, una firma con base en Suiza. Acompañamos a personas y familias que quieren estudiar, trabajar o reunirse con los suyos en Europa, por la vía legal.","Visados · Estudios · Familia · Llegada · Documentos"],
+ ["Qué gana quien nos ve","segundos 15 a 22","Vuelve el vocero.","Con nosotros no vas a pagarle a nadie sin saber antes si tu caso tiene camino. Primero te escuchamos. Después te decimos qué ruta aplica. Y si no aplica ninguna, también te lo decimos.",""],
+ ["Para quién no es","segundos 22 a 28","Plano más cerrado del vocero.","Si buscas a alguien que te diga «sí o sí», no somos nosotros.","Si buscas un «sí o sí», no somos nosotros."],
+ ["Qué viene","segundos 28 a 38","Se muestran las cinco rutas como tarjetas, una tras otra.","En las próximas semanas te vamos a explicar cada ruta, una por una: qué pide, cuánto tiempo toma y para quién es. Sin letra chiquita.",""],
+ ["Llamada a la acción","segundos 38 a 43","Logo de NEXORA.","Síguenos para no perderte ninguna.","Cada semana, una ruta explicada. Síguenos."]]},
+A2:{quien:"El vocero de NEXORA, de pie junto a una pantalla con un horario semanal.",musica:"Ritmo ligero y positivo.",esc:[
+ ["Gancho","segundos 0 a 4","Un horario de lunes a domingo; se pintan de celeste 30 horas.","Si haces un máster en España, hoy puedes trabajar hasta treinta horas a la semana. Hasta mayo de 2025 eran veinte.","Estudiar en España ya no es solo estudiar."],
+ ["Frase de honestidad","segundos 4 a 8","Vocero a cámara.","Pero ojo: no cualquier curso te da ese permiso. Un curso de idiomas, por ejemplo, va por otro lado.",""],
+ ["Qué cambió","segundos 8 a 18","Captura del Boletín Oficial del Estado con la fecha resaltada.","El 20 de mayo de 2025 entró en vigor un nuevo reglamento de extranjería en España. Si estudias un grado, un máster o un doctorado, el permiso para trabajar viene incluido con tu estancia de estudios. No tienes que pedirlo aparte.","Grado · Máster · Doctorado → hasta 30 horas"],
+ ["Qué significa para ti","segundos 18 a 28","Una estudiante con su laptop en una cafetería; después, trabajando en un local.","En la práctica: puedes estudiar y cubrir parte de tus gastos con un trabajo. Eso sí, el horario tiene que encajar con tus clases.",""],
+ ["La advertencia","segundos 28 a 35","Vocero a cámara, tono serio.","Lo que no puedes hacer es usar el estudio como excusa para trabajar cuarenta horas. Si lo haces, te pueden quitar la estancia.","Más de 30 horas = riesgo de perder la estancia."],
+ ["Llamada a la acción","segundos 35 a 40","Vocero señala abajo, a los comentarios.","Comenta ESTUDIAR y te mandamos qué tipos de estudios entran en esta regla.","Comenta ESTUDIAR"]]},
+A3:{quien:"El vocero de NEXORA frente a una pared con tres papeles adhesivos escritos a mano.",musica:"Ritmo rápido; un efecto de papel arrancado en cada creencia.",esc:[
+ ["Gancho","segundos 0 a 3","Tres papeles amarillos en la pared. El vocero los señala.","Te dijeron tres cosas sobre irte a Europa. Solo una es verdad.","3 cosas que te dijeron. Solo 1 es verdad."],
+ ["Primera creencia","segundos 3 a 14","Arranca el primer papel: «Necesitas un familiar allá».","Primera: que necesitas un familiar allá. Tener familia en Europa ayuda si quieres reunirte con ellos; para eso existe la reagrupación familiar. Pero para estudiar o trabajar, no es un requisito.","FALSO: no necesitas un familiar para estudiar o trabajar."],
+ ["Segunda creencia","segundos 14 a 27","Arranca el segundo papel: «Solo se puede sin papeles».","Segunda: que la única forma es irse sin papeles. Esa ruta la conoces: deudas con desconocidos, riesgo en el camino y años sin poder volver a ver a tu familia. Las rutas en regla existen. Piden tiempo y documentos, pero existen.","FALSO: existen rutas legales."],
+ ["Tercera creencia (la verdadera)","segundos 27 a 42","Se queda mirando el tercer papel, «Necesitas plata», y no lo arranca.","Y tercera: que necesitas plata. Esta es verdad. Casi cualquier visado te pide demostrar que puedes mantenerte. La diferencia está en saber cuánto y para qué ruta desde el primer día, y no enterarte el día de la cita.","VERDAD: necesitas demostrar medios económicos."],
+ ["Llamada a la acción","segundos 42 a 48","Vocero a cámara.","¿Cuál de las tres te habían dicho a ti? Comenta uno, dos o tres.","¿Cuál te dijeron? Comenta 1, 2 o 3."]]},
+A4:{quien:"Dos actores jóvenes (un hombre y una mujer). Voz en off del vocero de NEXORA.",musica:"Tensión baja a la izquierda; música más luminosa a la derecha. Se unen en el cierre.",esc:[
+ ["Gancho","segundos 0 a 4","Pantalla dividida. Izquierda: él cierra la puerta de su casa de madrugada con una mochila. Derecha: ella cierra la puerta de su casa con una carpeta azul bajo el brazo.","Los dos salieron de Cuenca el mismo mes.","Los dos salieron de Cuenca el mismo mes."],
+ ["Cómo empezó cada uno","segundos 4 a 12","Izquierda: él entrega un fajo de billetes a un hombre dentro de un carro. Derecha: ella ordena documentos en una mesa.","Él le pagó a alguien que le prometió que iba a llegar. Ella pasó tres meses armando una carpeta.",""],
+ ["El camino","segundos 12 a 20","Izquierda: botas embarradas, selva, una valla. Derecha: un sello de visado en el pasaporte, el aeropuerto.","(Solo el sonido de cada lado.)","Izquierda: Selva · Deuda · Frontera. Derecha: Matrícula · Visado · NIE"],
+ ["El dato","segundos 20 a 26","Pantalla completa azul.","En 2025, casi cinco mil ecuatorianos fueron detenidos en la frontera de Estados Unidos.","En 2025, 4.949 ecuatorianos fueron detenidos en la frontera de EE. UU. con México."],
+ ["Cierre","segundos 26 a 32","Vuelve la pantalla dividida. Izquierda: él, sentado en una banca, esperando. Derecha: ella abre la ventana de su departamento.","Él todavía no sabe si se puede quedar. Ella ya sabe en qué barrio vive. Los dos tenían las mismas ganas.",""],
+ ["Llamada a la acción","segundos 32 a 35","Logo de NEXORA.","Envíaselo a alguien que lo esté pensando.","Envíaselo a alguien que lo esté pensando."]]},
+C1:{quien:"El vocero de NEXORA en una mesa, plano fijo, tono serio.",musica:"Casi sin música; un sonido de papel roto al inicio.",esc:[
+ ["Gancho","segundos 0 a 4","El vocero desliza sobre la mesa una hoja que dice «GARANTIZADO» en letras grandes y la rompe por la mitad.","No te podemos garantizar que te aprueben la visa. Y quien te lo garantice te está mintiendo.","Ninguna agencia debería prometerte esto."],
+ ["Por qué","segundos 4 a 12","Vocero a cámara.","La decisión la toma el consulado o la oficina de extranjería. No nosotros, ni nadie que te cobre por el trámite.","La decisión es del consulado."],
+ ["Qué sí controlamos","segundos 12 a 22","Imágenes de una carpeta con pestañas de colores y un sello de apostilla.","Lo que sí podemos controlar es que tu expediente llegue completo. Que no te lo rechacen por un documento sin apostillar, una traducción que faltó o una fecha vencida.","Lo que sí controlamos: un expediente completo."],
+ ["Para quién es","segundos 22 a 27","Plano más cerrado.","Si alguien ya te prometió el «sí» antes de ver tus papeles, este video es para ti.",""],
+ ["Cómo trabajamos","segundos 27 a 38","Aparecen cuatro números en pantalla, uno por uno.","Así trabajamos: primero escuchamos tu caso. Después definimos el servicio. Luego organizamos los documentos. Y te acompañamos durante el proceso. Cuatro pasos, todos por escrito.","1 Escuchamos · 2 Definimos · 3 Organizamos · 4 Acompañamos"],
+ ["Cierre","segundos 38 a 42","Vocero a cámara.","Te decimos lo que podemos hacer y también lo que no. Por eso puedes confiar en lo primero.",""],
+ ["Llamada a la acción","segundos 42 a 45","Logo de NEXORA.","Comenta CLARO y te mandamos qué incluye cada paso.","Comenta CLARO"]]},
+C2:{quien:"El vocero de NEXORA con una pantalla o tablet al lado.",musica:"Ritmo constante; un sonido de check en cada pregunta.",esc:[
+ ["Gancho","segundos 0 a 4","Un celular con un chat: «Hola, ¿cuánto cuesta la visa?». La respuesta llega al instante: «Le sale en tanto, ¿le separo el cupo?». Corte al vocero.","Si alguien te cotizó un trámite para Europa sin preguntarte estas seis cosas, no sabe qué te está vendiendo.","Si te cotizaron sin preguntarte esto, desconfía."],
+ ["Frase de honestidad","segundos 4 a 8","Vocero a cámara.","Ojo: tener las seis respuestas no significa que tu caso califica. Significa que ya te podemos decir si califica.",""],
+ ["Las seis preguntas","segundos 8 a 30","Un formulario con seis casillas que se marcan una por una.","Uno: tu nacionalidad y el país donde vives. Dos: a qué país quieres ir. Tres: el motivo del viaje; no es lo mismo estudiar que reunirte con tu familia. Cuatro: las fechas aproximadas. Cinco: tu situación familiar o académica. Y seis: qué documentos ya tienes.","1 Nacionalidad y residencia · 2 Destino · 3 Motivo · 4 Fechas · 5 Situación familiar o académica · 6 Documentos que tienes"],
+ ["Por qué importan","segundos 30 a 36","Vocero a cámara.","Con esas seis respuestas te decimos qué ruta aplica, qué te falta y cuánto cuesta acompañarte. Antes de eso, cualquier precio es inventado.",""],
+ ["Llamada a la acción","segundos 36 a 40","Pantalla azul con la palabra RUTA.","Escribe RUTA y te mandamos estas preguntas para que las vayas respondiendo.","Escribe RUTA"]]},
+C3a:{quien:"El vocero de NEXORA junto a la captura del comentario (anonimizada o con permiso).",musica:"Suave, cercana.",esc:[
+ ["Gancho","segundos 0 a 3","El comentario aparece en grande en pantalla; el vocero lo señala.","(Leyendo) «Tengo 38 años. Ya se me pasó el tren.»","«Tengo 38. Ya se me pasó el tren.»"],
+ ["Frase de honestidad","segundos 3 a 8","Vocero a cámara.","Te voy a responder con la verdad: hay rutas donde la edad sí pesa. No te voy a decir que da igual.",""],
+ ["Desarrollo","segundos 8 a 25","Vocero a cámara; aparecen las rutas como íconos.","Pero en otras no. Para estudiar un máster no hay una edad máxima. Para reunirte con tu familia cuenta el vínculo y los papeles, no tus años. Lo que sí cambia con la edad es qué ruta te conviene, y eso se ve caso por caso.","Estudios: sin edad máxima · Familia: cuenta el vínculo"],
+ ["Cierre","segundos 25 a 32","Plano cerrado del vocero.","A los 38 no se te pasó el tren. Te faltaba saber cuál tomar.",""],
+ ["Llamada a la acción","segundos 32 a 36","Logo de NEXORA.","Déjanos tu duda en comentarios. La respondemos en el próximo video.","Deja tu duda en comentarios."]]},
+C3b:{quien:"El vocero de NEXORA junto a la captura del comentario.",musica:"Suave, cercana.",esc:[
+ ["Gancho","segundos 0 a 3","El comentario en grande en pantalla.","(Leyendo) «¿Y cómo sé que ustedes no me van a estafar también?»","«¿Y cómo sé que ustedes no me van a estafar?»"],
+ ["Frase de honestidad","segundos 3 a 8","Vocero a cámara.","Es la pregunta más justa que nos han hecho. Y no te vamos a pedir que confíes porque sí.",""],
+ ["Desarrollo","segundos 8 a 28","Aparecen tres íconos: un contrato, una factura, una tarjeta con nombres.","Pídenos tres cosas antes de pagar un centavo. Uno: un contrato que diga qué incluye y qué no. Dos: una factura a nombre de la empresa, nunca un depósito a una cuenta personal. Tres: los nombres de las personas que van a llevar tu caso. Si alguien no te da esas tres cosas, no le pagues. Ni a nosotros.","Contrato · Factura · Nombres"],
+ ["Cierre","segundos 28 a 34","Vocero a cámara.","Y si alguien te promete la aprobación, desconfía. Nadie puede prometerla.",""],
+ ["Llamada a la acción","segundos 34 a 38","Logo de NEXORA.","Envíale este video a quien esté por pagarle a alguien.","Envíaselo a quien esté por pagar un trámite."]]},
+C3c:{quien:"El vocero de NEXORA junto a la captura del comentario.",musica:"Suave, cercana.",esc:[
+ ["Gancho","segundos 0 a 3","El comentario en grande en pantalla.","(Leyendo) «Todo bonito, pero no tengo la plata.»","«Todo bonito, pero no tengo la plata.»"],
+ ["Frase de honestidad","segundos 3 a 7","Vocero a cámara.","No te vamos a decir que irse a Europa sale barato. No sale barato.",""],
+ ["Desarrollo","segundos 7 a 27","Una calculadora en pantalla; tres casillas que se llenan.","Lo que sí te podemos decir es que casi todos calculan mal. Unos creen que necesitan mucho más de lo que piden y se rinden sin averiguar. Otros calculan de menos y se quedan sin plata a mitad del trámite. Lo primero es saber tu número real: lo que te piden demostrar, lo que cuestan los trámites y lo que cuesta vivir el primer mes.","Lo que piden demostrar · Trámites · Primer mes"],
+ ["Cierre","segundos 27 a 34","Vocero a cámara.","Con ese número decides tú. Puede ser ahora, o puede ser un plan de ahorro de un año. Las dos son decisiones.",""],
+ ["Llamada a la acción","segundos 34 a 38","Logo de NEXORA.","Comenta CUENTA y te mandamos la plantilla para calcularlo.","Comenta CUENTA"]]},
+C4:{quien:"Voz en off del vocero de NEXORA. Fotos y videos reales del caso, con permiso escrito.",musica:"Emotiva y contenida; sube en el reencuentro.",esc:[
+ ["Gancho","segundos 0 a 4","Foto de una madre y su hija abrazadas en un aeropuerto (rostros difuminados si la familia lo pide).","[Nombre] tardó [número] meses en traer a su hija a [ciudad de España]. Te contamos cada paso.","[Número] meses. Así fue cada paso."],
+ ["Frase de honestidad","segundos 4 a 9","Pantalla azul.","Antes de empezar: su caso no es el tuyo. Los plazos cambian según el consulado y los papeles de cada familia.",""],
+ ["El punto de partida","segundos 9 a 17","Un mapa Ecuador–España con una línea que los une.","[Nombre] vive en [ciudad] desde [año], con residencia legal. Su hija se quedó en [ciudad de Ecuador] con la abuela.",""],
+ ["Lo que se pidió","segundos 17 a 28","Una carpeta que se abre; los documentos aparecen uno por uno.","Para la reagrupación familiar preparamos: [documento 1], [documento 2] y [documento 3].","Reagrupación familiar"],
+ ["Lo que faltaba","segundos 28 a 36","Un documento marcado en rojo que luego pasa a verde.","En la primera revisión encontramos que [documento que faltaba o estaba mal]. Lo corregimos antes de presentar.",""],
+ ["Los tiempos","segundos 36 a 46","Una línea de tiempo con los meses.","Mes uno: [etapa]. Mes [número]: [etapa]. Mes [número]: aprobación y visado de su hija.","Línea de tiempo real del caso"],
+ ["Cierre","segundos 46 a 54","Video del reencuentro.","La diferencia no fue la suerte. Fue presentar el expediente completo desde la primera vez.",""],
+ ["Llamada a la acción","segundos 54 a 58","Logo de NEXORA.","Si tu caso se parece, escribe FAMILIA.","Escribe FAMILIA"]]},
+C5:{quien:"La asesora o asesor de NEXORA que responde los mensajes, en su escritorio.",musica:"Cálida, de fondo.",esc:[
+ ["Gancho","segundos 0 a 4","Un celular sobre una mesa recibe: «Hola, quiero información para estudiar en España». Corte: la asesora lee ese mismo mensaje en su computadora.","Este mensaje me llegó anoche. Hoy a las nueve ya estaba respondido.","La persona que va a leer tu mensaje."],
+ ["Presentación","segundos 4 a 12","Plano medio de la asesora.","Soy [Nombre], asesora de NEXORA en [ciudad]. Cuando nos escribes, no te contesta un robot: te contesto yo, o alguien de mi equipo.","[Nombre] · Asesora NEXORA"],
+ ["Frase de honestidad","segundos 12 a 17","Asesora a cámara, sonriendo.","No te voy a responder a las tres de la mañana. Te respondo en horario de oficina, pero te respondo.",""],
+ ["Quién es","segundos 17 a 28","Imágenes de ella trabajando: revisando carpetas, en una videollamada.","Llevo [número] años acompañando procesos de [estudios, familia o visados]. Cada semana reviso casos de Quito, Guayaquil, Cuenca… y casi todos empiezan con la misma pregunta: ¿por dónde empiezo?",""],
+ ["Llamada a la acción","segundos 28 a 33","Asesora a cámara.","Escríbeme. Te respondo en menos de [número] horas hábiles.","Escríbenos · Respuesta en menos de [número] horas hábiles"]]},
+AC1:{quien:"El vocero de NEXORA.",musica:"Música de la marca, con energía.",esc:[
+ ["Gancho","segundos 0 a 4","Pantalla de los guardados de Instagram, llena de videos de NEXORA; el dedo baja y baja.","Si llevas semanas guardando nuestros videos, ya hiciste lo más difícil: decidir que quieres saber.","Si llevas semanas pensándolo, esto es lo que sigue."],
+ ["Frase de honestidad","segundos 4 a 8","El celular se bloquea. Sobre la mesa queda una carpeta azul vacía.","Pero guardar videos no arma un expediente.",""],
+ ["Desarrollo","segundos 8 a 18","Vocero a cámara.","El techo que sientes tiene salida, y esa salida tiene papeles. Lo que te falta es saber cuál es la tuya. Para eso existe la evaluación inicial.",""],
+ ["Qué recibes","segundos 18 a 32","Lista en pantalla con tres puntos.","En esa conversación revisamos tu caso con seis preguntas. Te decimos qué ruta aplica, qué documentos necesitarías y cuánto cuesta acompañarte. Todo por escrito.","Tu ruta · Tus documentos · El costo, por escrito"],
+ ["Cupos reales","segundos 32 a 38","Vocero a cámara.","Esta semana tenemos [número] espacios.","[Número] espacios esta semana."],
+ ["Llamada a la acción","segundos 38 a 45","Pantalla azul con la palabra RUTA.","Escribe RUTA. Te llegan las seis preguntas y eliges el día.","Escribe RUTA"]]},
+AC2:{quien:"Sin presentador: grabación de la pantalla del celular con voz en off.",musica:"Ligera, con sonidos de notificación.",esc:[
+ ["Gancho","segundos 0 a 3","En un comentario se teclea R-U-T-A y se envía.","Esto es lo que pasa diez segundos después de escribir RUTA.","Lo que pasa 10 segundos después de escribir RUTA."],
+ ["Llega el mensaje","segundos 3 a 10","Llega un mensaje directo de NEXORA con un saludo y la primera pregunta.","Te llega un mensaje con seis preguntas. Las respondes cuando puedas: hoy, mañana o el fin de semana.",""],
+ ["Las preguntas","segundos 10 a 17","Se responden rápido las preguntas en el chat.","Son las mismas que te haría cualquier asesor serio: a dónde quieres ir, para qué, cuándo y qué papeles tienes.",""],
+ ["La agenda","segundos 17 a 22","Aparece un calendario con horarios; se toca uno.","Después eliges el día y la hora de tu evaluación.",""],
+ ["Frase de honestidad","segundos 22 a 26","El chat queda en pantalla.","Lo que no vas a recibir por chat es un «sí». Eso te lo decimos después de ver tus papeles.",""],
+ ["Llamada a la acción","segundos 26 a 30","Pantalla azul con la palabra RUTA.","Pruébalo ahora: comenta RUTA.","Comenta RUTA"]]},
+AC3:{quien:"El vocero de NEXORA junto a un calendario grande.",musica:"Reloj de fondo al inicio; luego ritmo constante.",esc:[
+ ["Gancho","segundos 0 a 4","Calendario de pared en septiembre de 2027 con un círculo celeste.","Si quieres empezar un máster en España en septiembre de 2027, tu reloj ya está corriendo.","¿Máster en septiembre de 2027? Tu reloj ya corre."],
+ ["Frase de honestidad","segundos 4 a 8","Vocero a cámara.","Tranquilo: no necesitas tenerlo todo hoy. Necesitas empezar en orden.",""],
+ ["Los pasos","segundos 8 a 28","El calendario retrocede mes por mes hasta hoy y marca cada paso.","Primero eliges el programa y postulas. Después esperas la carta de admisión. Con esa carta preparas y apostillas tus documentos. Luego pides la cita para el visado de estudios. Y recién entonces compras el pasaje.","1 Postular · 2 Admisión · 3 Documentos · 4 Cita de visado · 5 Viaje"],
+ ["Por qué ahora","segundos 28 a 34","Vocero a cámara.","Cada paso tiene su tiempo, y si uno se atrasa, empuja a todos los demás. Por eso conviene empezar con margen.",""],
+ ["Llamada a la acción","segundos 34 a 40","Vocero señala abajo.","Comenta ESTUDIAR y armamos tu calendario con fechas reales.","Comenta ESTUDIAR"]]},
+AC4:{quien:"El mismo actor del video de la puerta (Reel 1) y el vocero de NEXORA en voz en off.",musica:"Piano del Reel 2; sube al final.",esc:[
+ ["Gancho","segundos 0 a 4","La misma puerta cerrada del Reel 1. La persona está quieta frente a ella, con la mano en la manija.","«Lo voy a pensar.» Lo dijiste el año pasado. Y el anterior.","«Lo voy a pensar.» ¿Cuántas veces lo has dicho?"],
+ ["Frase de honestidad","segundos 4 a 9","Plano cerrado de la mano en la manija.","Esta vez no te pedimos que decidas irte. Te pedimos una conversación.",""],
+ ["Desarrollo","segundos 9 a 22","La persona suelta la manija.","De esa conversación sales con una respuesta clara: tu proyecto tiene una ruta, o todavía no la tiene. Las dos respuestas te sirven. La primera te dice por dónde empezar. La segunda te ahorra plata y tiempo.",""],
+ ["Giro","segundos 22 a 28","Se da la vuelta y camina hacia la puerta abierta, con la luz y la montaña nevada.","(Silencio; solo la música.)",""],
+ ["Cierre","segundos 28 a 33","Cruza la puerta. Fundido a pantalla azul.","El techo no eras tú. Pero el próximo paso sí te toca a ti.","El techo no eras tú. Pero el próximo paso sí te toca a ti."],
+ ["Llamada a la acción","segundos 33 a 36","Logo de NEXORA y la palabra RUTA.","Escribe RUTA.","Escribe RUTA"]]}
+};
+
+const POSTS={
+'C-E1':"No es un test para sentirte mal. Es para ponerle nombre a algo que a lo mejor llevas tiempo sintiendo. Marca las que te pasan y cuéntanos en comentarios cuántas fueron. El día 11 te contamos por qué te lo preguntamos.",
+'C-E2':"Tres cifras oficiales de 2026 que casi nunca se leen juntas. ¿Cuál de las tres te pegó más? Fuentes: INEC, ENEMDU mayo 2026 · Acuerdo Ministerial MDT-2025-195.",
+'C-A1':"Sí: el salario mínimo en España es más del doble del básico en Ecuador. Pero la pregunta que importa es cuánto te queda después de pagar arriendo, transporte y comida en la ciudad a la que vas. Comenta CUENTA y te mandamos una plantilla para hacer esa cuenta con tus números. Fuentes: Acuerdo MDT-2025-195 · Real Decreto 126/2026.",
+'C-A2':"No todos se van a Europa por la misma razón, y no todos necesitan el mismo trámite. Encuentra tu caso en estas cinco rutas. ¿No sabes cuál es la tuya? Comenta RUTA y te ayudamos a encontrarla.",
+'C-A3':"Si estás pensando en irte a España, estas palabras te van a salir en todos los trámites. Aquí están, explicadas en simple. ¿Cuál no conocías? Escríbela en comentarios.",
+'C-C1':"Si alguien te hace una de estas siete cosas, no le pagues. Ni a nosotros. Envíaselo a quien esté pensando en irse: le puede ahorrar mucho más que plata.",
+'C-C2':"Esto es lo que pasa desde el momento en que nos escribes. Y algo que decimos desde el primer mensaje: ningún servicio implica garantía de aprobación. Escribe RUTA para empezar por el paso 1.",
+'C-C3':"No hace falta tenerlo todo, pero conviene saber dónde está cada papel. Antes de apostillar nada, pregúntanos cuál te piden según tu ruta: cada una pide distinto.",
+'C-AC1':"La evaluación inicial, explicada sin letra chiquita: lo que recibes y lo que no. Esta semana tenemos [número] espacios. Escribe RUTA y elige tu día.",
+'C-AC2':"¿Todavía no sabes cuál es tu ruta? Responde estas preguntas y comenta el nombre de la que te salió. Te escribimos con la información de tu caso."
+};
+
+// La serie de comentarios se divide en tres reels completos
+(function(){
+  const f3=PH[2]; const i=f3.reels.findIndex(r=>r.id==='C3'); if(i<0) return;
+  const b=f3.reels[i];
+  const eps=[
+   Object.assign({},b,{id:'C3a',t:'Lo que nos comentaste (1): «Ya estoy muy grande»',ht:'«Tengo 38.<br><mark>Ya se me pasó el tren.</mark>»'}),
+   Object.assign({},b,{id:'C3b',t:'Lo que nos comentaste (2): «¿Y si me estafan?»',ht:'«¿Y cómo sé que ustedes<br><mark>no me van a estafar?</mark>»',per:'Escéptico'}),
+   Object.assign({},b,{id:'C3c',t:'Lo que nos comentaste (3): «No tengo la plata»',ht:'«Todo bonito, pero<br><mark>no tengo la plata.</mark>»',per:'Recién graduado · estancado'})];
+  f3.reels.splice(i,1,...eps);
+})();
+IDEAS.C3a=IDEAS.C3; IDEAS.C3b=['Respondemos en video a quien pregunta cómo saber que NEXORA no es otra estafa: tres cosas que debe pedir antes de pagarle a cualquiera.','Darle a la gente herramientas para protegerse, incluso de nosotros, es lo que más confianza genera.']; IDEAS.C3c=['Respondemos en video a quien dice que no tiene la plata: cómo calcular el número real que necesita para su ruta.','Es honesto (no sale barato) y le da a la persona un primer paso concreto.'];
+PH.forEach(p=>[...p.reels,...p.caros].forEach(x=>{const i=IDEAS[x.id]; if(i){x.idea=i[0];x.por=i[1];} if(FULL[x.id]) Object.assign(x,FULL[x.id]); if(POSTS[x.id]) x.post=POSTS[x.id];}));
+
+// orden = orden de publicación
+(function(){const ord={'fase-1':['E3','E1','E2'],'fase-3':['C1','C2','C3a','C4','C5','C3b','C3c']}, ordc={'fase-2':['C-A2','C-A1','C-A3']};
+PH.forEach(p=>{if(ord[p.id]) p.reels.sort((a,b)=>ord[p.id].indexOf(a.id)-ord[p.id].indexOf(b.id)); if(ordc[p.id]) p.caros.sort((a,b)=>ordc[p.id].indexOf(a.id)-ordc[p.id].indexOf(b.id));});})();
+// numeración simple
+let RN=0, CN=0; const NUM={};
+PH.forEach(p=>{p.reels.forEach(r=>{r.num=++RN; NUM[r.id]='Reel '+r.num;}); p.caros.forEach(c=>{c.num=++CN; NUM[c.id]='Carrusel '+c.num;});});
+
+
 function reelHTML(r){
-  const sob=r.sob?r.sob.map(s=>`<li class="sob"><span>${s[0]}</span><div>${s[1]}</div></li>`).join(''):'';
-  const sobStart=r.sob?'<li class="sob"><span>5–12 s</span><div><b style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--navy)">Sobredimensión de valor</b></div></li>':'';
+  const said=r.esc.map(e=>e[3]).filter(t=>t && !/^\(Sin voz/.test(t) && !/^\(Solo/.test(t) && !/^\(Silencio/.test(t)).join(' ');
+  const scenes=r.esc.map((e,i)=>`<div class="scene"><div class="sh"><span>Escena ${i+1}</span>${e[0]} <em>· ${e[1]}</em></div><dl>
+     <dt>Qué se ve</dt><dd>${e[2]}</dd>
+     ${e[3]?`<dt>Qué se dice</dt><dd class="say">${e[3]}</dd>`:''}
+     ${e[4]?`<dt>Texto en pantalla</dt><dd class="txt">${e[4]}</dd>`:''}</dl></div>`).join('');
+  const last=r.esc[r.esc.length-1][1].replace(/^segundos \d+ a /,'');
   return `<article class="reel fade">
    <div class="phone"><div class="bg" style="background-image:url(img/${r.img})"></div><div class="shade"></div><div class="band"></div>
-     <div class="id">REEL ${r.id}</div><div class="ht">${r.ht}</div>
-     <div class="bar"><i></i></div><div class="ft"><span>0:03 / ${r.dur.split('–').pop().replace(' c/u','')}</span><img src="img/logo-blanco.svg" alt=""></div></div>
+     <div class="id">REEL ${r.num}</div><div class="ht">${r.ht}</div>
+     <div class="bar"><i></i></div><div class="ft"><span>0:03 / 0:${String(last).padStart(2,'0')}</span><img src="img/logo-blanco.svg" alt=""></div></div>
    <div class="rbody">
-     <h4>${r.id} · ${r.t}</h4>
-     <div class="tags"><span class="tag">${r.fmt}</span><span class="tag">${r.dur}</span><span class="tag c">Estructura ${r.est}</span><span class="tag c">Pilar: ${r.pil}</span><span class="tag">Perfil: ${r.per}</span><span class="tag">Gatillo: ${r.gat}</span></div>
-     <div class="hooks"><div><b>Gancho verbal</b>${r.ver}</div><div><b>Gancho visual</b>${r.vis}</div><div><b>Gancho textual</b>${r.ht.replace(/<br>/g,' ').replace(/<\/?mark>/g,'')}</div></div>
-     <div class="primer"><b>El «pero»</b>${r.pr}</div>
-     <ul class="script">${sobStart}${sob}${r.sc.map(s=>`<li><span>${s[0]}</span><div>${s[1]}</div></li>`).join('')}</ul>
-     <div class="cta">${CH}<div>${r.cta}</div></div>
-     ${r.nota?`<div class="note">${r.nota}</div>`:''}
+     <h4>Reel ${r.num} · ${r.t}</h4>
+     <div class="tags"><span class="tag">${r.fmt}</span><span class="tag">Duración: ${last} segundos</span><span class="tag c">Para: ${r.per}</span></div>
+     <div class="idea"><b>La idea</b>${r.idea}</div><div class="why"><b>Por qué funciona</b>${r.por}</div>
+     <div class="who"><div><b>Quién aparece</b>${r.quien}</div><div><b>Música y sonido</b>${r.musica}</div></div>
+     <div class="scr-h">Guion completo, escena por escena</div>
+     <div class="scenes">${scenes}</div>
+     ${said?`<details class="tp"><summary>Texto completo para leer en cámara</summary><p>${said}</p></details>`:''}
+     ${r.nota?`<div class="note">Nota para producción: ${r.nota}</div>`:''}
+     <div class="ficha"><b>Ficha técnica Fórmula 100K:</b> molde «${r.est.replace(/^\d+ · /,'')}» · valor que aporta: ${r.pil} · emoción que activa: ${r.gat}</div>
    </div></article>`;
 }
 function caroHTML(c){
@@ -906,11 +1147,15 @@ function caroHTML(c){
   const slides=c.sl.map((s,i)=>{
     const cls=i===0?'s0':(i===n-1?'s3':(i%2?'s1':'s2'));
     const lg=(i===0)?'logo-blanco.svg':'logo.svg';
-    return `<div class="sl ${cls}"><span class="k">${String(i+1).padStart(2,'0')}/${String(n).padStart(2,'0')}</span>${s}<img class="lg" src="img/${lg}" alt=""></div>`;
+    return `<div class="sl ${cls}"><span class="k">Lámina ${i+1} de ${n}</span>${s}<img class="lg" src="img/${lg}" alt=""></div>`;
   }).join('');
-  return `<article class="caro fade"><div class="caro-top"><h4>${c.id.replace('C-','Carrusel ')} · ${c.t}</h4>
-   <div class="tags" style="margin:0"><span class="tag">${n} láminas · 4:5</span><span class="tag c">Formato: ${c.fmt}</span><span class="tag c">Pilar: ${c.pil}</span><span class="tag">Perfil: ${c.per}</span></div></div>
-   <div class="strip" tabindex="0" aria-label="Láminas del carrusel">${slides}</div><p class="cap">${c.cap}</p></article>`;
+  return `<article class="caro fade"><div class="caro-top"><h4>Carrusel ${c.num} · ${c.t}</h4>
+   <div class="tags" style="margin:0"><span class="tag">${n} láminas · formato vertical</span><span class="tag">${c.fmt}</span><span class="tag c">Para: ${c.per}</span></div></div>
+   <div class="idea"><b>La idea</b>${c.idea}</div><div class="why"><b>Por qué funciona</b>${c.por}</div>
+   <div class="scr-h" style="margin-bottom:10px">Las láminas, con su texto final (desliza →)</div>
+   <div class="strip" tabindex="0" aria-label="Láminas del carrusel">${slides}</div>
+   ${c.post?`<div class="post"><b>Texto del post</b>${c.post}</div>`:''}
+   <p class="cap">${c.cap}</p></article>`;
 }
 function phaseHTML(p){
   const meter=lvl=>`<div class="meter">${[1,2,3,4].map(i=>`<i class="${i<=lvl?'on':''}"></i>`).join('')}</div>`;
@@ -931,20 +1176,22 @@ function phaseHTML(p){
 document.getElementById('phases').innerHTML=PH.map(phaseHTML).join('');
 
 // hero meta + rhythm
-const nReels=PH.reduce((a,p)=>a+p.reels.length,0)+2; // C3 = serie de 3
+const nReels=PH.reduce((a,p)=>a+p.reels.length,0);
 const nCaros=PH.reduce((a,p)=>a+p.caros.length,0);
 document.getElementById('heroMeta').innerHTML=`<div><b>52</b>días</div><div><b>4</b>fases</div><div><b>${nReels}</b>reels</div><div><b>${nCaros}</b>carruseles</div>`;
-document.getElementById('rhythm').innerHTML=`<div><b>${nReels}</b><span>reels guionizados (la serie C3 cuenta como 3)</span></div><div><b>${nCaros}</b><span>carruseles con todas sus láminas</span></div><div><b>3–5</b><span>publicaciones por semana en el feed</span></div><div><b>7/7</b><span>historias todos los días</span></div>`;
+document.getElementById('rhythm').innerHTML=`<div><b>${nReels}</b><span>reels con guion completo, escena por escena</span></div><div><b>${nCaros}</b><span>carruseles con todas sus láminas</span></div><div><b>3–5</b><span>publicaciones por semana en el feed</span></div><div><b>7/7</b><span>historias todos los días</span></div>`;
 
 // calendar
 const CAL=[
- ['Expectativa','Días 1 – 10',[[1,'r','E3 · La puerta'],[3,'r','E1 · Doce dólares'],[5,'c','Test: ¿llegaste a tu techo?'],[7,'r','E2 · ¿Qué te frena?'],[9,'c','Tres cifras que nadie te pone juntas'],[10,'h','Cuenta regresiva · «Mañana»']]],
- ['Atención','Días 11 – 24',[[11,'r','A1 · Te debíamos una respuesta'],[13,'r','A2 · 30 horas'],[15,'c','5 rutas en regla'],[17,'r','A3 · Tres cosas, una es verdad'],[19,'c','$482 contra €1.221'],[21,'r','A4 · Dos caminos'],[23,'c','Glosario: 8 palabras']]],
- ['Convencimiento','Días 25 – 38',[[25,'r','C1 · No te garantizamos la visa'],[27,'c','7 señales de estafa'],[29,'r','C2 · Las seis preguntas'],[30,'h','Live: Estudiar en España 2027'],[31,'r','C3 · Comentarios, ep. 1'],[33,'c','Qué pasa después de escribirnos'],[34,'r','C4 · Un caso, paso a paso'],[36,'r','C5 · Quién lee tu mensaje'],[37,'c','Documentos a la mano'],[38,'r','C3 · Comentarios, ep. 2']]],
- ['Acción','Días 39 – 52',[[39,'r','AC1 · Guardar videos no basta'],[41,'c','Evaluación sin letra chiquita'],[43,'r','AC2 · Qué pasa al escribir RUTA'],[45,'r','AC3 · Septiembre de 2027'],[47,'c','¿Cuál es tu próximo paso?'],[49,'r','C3 · Comentarios, ep. 3'],[50,'h','Live de cierre + preguntas'],[51,'r','AC4 · «Lo voy a pensar»']]]
+ ['Expectativa','Días 1 – 10',[[1,'r','E3'],[3,'r','E1'],[5,'c','C-E1'],[7,'r','E2'],[9,'c','C-E2'],[10,'h','Cuenta regresiva: «Mañana»']]],
+ ['Atención','Días 11 – 24',[[11,'r','A1'],[13,'r','A2'],[15,'c','C-A2'],[17,'r','A3'],[19,'c','C-A1'],[21,'r','A4'],[23,'c','C-A3']]],
+ ['Convencimiento','Días 25 – 38',[[25,'r','C1'],[27,'c','C-C1'],[29,'r','C2'],[30,'h','Transmisión en vivo: «Estudiar en España en 2027»'],[31,'r','C3a'],[33,'c','C-C2'],[34,'r','C4'],[36,'r','C5'],[37,'c','C-C3'],[38,'r','C3b']]],
+ ['Acción','Días 39 – 52',[[39,'r','AC1'],[41,'c','C-AC1'],[43,'r','AC2'],[45,'r','AC3'],[47,'c','C-AC2'],[49,'r','C3c'],[50,'h','Transmisión en vivo de cierre, con preguntas'],[51,'r','AC4']]]
 ];
+const BYID={}; PH.forEach(p=>[...p.reels,...p.caros].forEach(x=>BYID[x.id]=x));
+const nm=x=>BYID[x[2]]?`${NUM[x[2]]} · ${BYID[x[2]].t}`:x[2];
 const lab={r:'REEL',c:'CARRUSEL',h:'HISTORIA'};
-document.getElementById('cal').innerHTML=CAL.map(c=>`<div class="col"><h4>${c[0]}</h4><div class="d">${c[1]}</div><ol>${c[2].map(x=>`<li><span>Día ${x[0]}</span><div><i class="${x[1]}">${lab[x[1]]}</i>${x[2]}</div></li>`).join('')}</ol></div>`).join('');
+document.getElementById('cal').innerHTML=CAL.map(c=>`<div class="col"><h4>${c[0]}</h4><div class="d">${c[1]}</div><ol>${c[2].map(x=>`<li><span>Día ${x[0]}</span><div><i class="${x[1]}">${lab[x[1]]}</i>${nm(x)}</div></li>`).join('')}</ol></div>`).join('');
 
 // reveal + active nav
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
